@@ -3,10 +3,11 @@ html,body{width: 100%;height: 100%;}
 .arrow{position:absolute;
        left: 5%;
        top: 3%;}
-       .ptteng{position:absolute;
-       left: 35%;
+       .ptteng{
+        width: 120px;
+       margin: 12% 40%;
 
-       top: 12%;}
+      }
        .people{text-align: center;position:absolute;color: white; font-size: 250%;
        left: 25%;
        top: 70%;}
