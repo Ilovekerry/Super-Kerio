@@ -1,0 +1,15 @@
+body,html{height: 100%;overflow-y: hidden;}
+body{background-color: #68cdd5;}
+#header{height:10%;margin-top: 1%;}
+#middle{text-align: center;height: 15%;}
+#main,p{font-size: 1.5em;
+color: white;
+font-style: bold;}
+#main{margin-right: 200px;
+margin-left: 200px;height: 55%;}
+#people{margin-left: 20px;text-align: center;
+float: left;}
+#grape{margin-right: 20px;text-align: center;
+float: right;}
+@media screen and (min-device-width:601px){#people,#grape{margin-top: 8%;}}
+@media screen and (max-device-width:600px){#people,#grape{margin-top: 40%;}}

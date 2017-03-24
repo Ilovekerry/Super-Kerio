@@ -1,0 +1,29 @@
+html,body{height: 100%;}
+body{background-color: #68cdd5;}
+#arrow{position:fixed;
+	left: 10px;
+       top: 10px;}
+
+#main{position: absolute;
+      top: 30%;
+      left: 0%;
+      bottom: 10%;
+      color: white;
+      width: 60%;
+      height: 60%;
+      font-size:250%;
+    
+      margin-right: 20%;
+      margin-left: 20%;}
+#people{position: absolute;
+        left: 0px;
+        bottom: 0px;}
+        #grape{position: absolute;
+        right: 0px;
+        bottom: 0px;}
+#middle{position: absolute;
+	top: 10%;
+	left: 0%;
+width: 100%;
+height: 20%;
+text-align: center;}

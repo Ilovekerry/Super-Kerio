@@ -1,0 +1,10 @@
+#red,#green,#yellow,#grey{width: 200px;
+height: 200px;
+border: 2px solid black;
+text-align: center;
+line-height: 200px;}
+#red{background-color: red; width: 100%;height: 800px;display: table;}
+#green{background-color: green;}
+#yellow{background-color: yellow;}
+#grey{background-color: grey;}
+#green,#yellow,#grey{display: table-cell;vertical-align: middle;}
