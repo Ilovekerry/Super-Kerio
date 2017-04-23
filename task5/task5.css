@@ -1,0 +1,18 @@
+body,p{margin: 0px;}
+html,body{width: 100%;}
+#header{width: 100%;height: 100px; background-color:#5fc0cd; 
+	position: fixed;}
+#footer{width: 100%;height: 100px; background-color:#5fc0cd;
+    position: fixed;bottom: 0px;}
+#headerleft{width:10%; height: 100px;float: left; text-align: center; 
+	}
+#headercenter{width: 80%;height: 100px;line-height: 100px;
+	text-align: center; color: white;font-size: 2em; float: left;}
+	#headerright{width:10%; height: 100px;float: right; text-align: center; }
+#return{margin-top:31.5px;}
+#maintop{width: 100%; height: 300px;
+
+
+	background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 300px;}
