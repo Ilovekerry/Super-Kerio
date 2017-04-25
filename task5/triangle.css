@@ -1,0 +1,6 @@
+body{margin: 0px;}
+div{border: 100px solid red;
+ border-top-color: transparent; 
+ border-left-color: transparent; 
+ border-right-color: transparent; 
+	 }
