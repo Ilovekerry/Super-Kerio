@@ -1,12 +1,12 @@
 body{margin: 0px;width: 100%;}
 .header{display: flex;position: fixed;top: 0px;align-items: center;
-        height: 150px;background-color: #5fc0cd; width: 100%;z-index: 100;}
-.back,.headerright{display: flex;align-items: center;justify-content: center;width: 100px; transform: scale(1.5);}
-.headermiddle{display: flex;flex: 1;justify-content: center;align-items: center;color: white;font-size: 3rem;}
+        height: 70px;background-color: #5fc0cd; width: 100%;z-index: 100;}
+.back,.headerright{display: flex;align-items: center;justify-content: center;width: 100px; transform: scale(1);}
+.headermiddle{display: flex;flex: 1;justify-content: center;align-items: center;color: white;font-size: 2rem;}
 .maintop{display: flex;height: 500px; background-image: url(images/background.png);
 	background-repeat: no-repeat;background-size: cover;}
 .maintopleft{display: flex;justify-content: center;align-items: center;width: 300px;}
-.maintopright{display: flex;flex: 1;flex-direction: column;}
+.maintopright{display: flex;width: 600px;flex-direction: column;}
 .maintoprightright{flex: 1;}
 .maintopright1,.maintopright4{height:180px;}
 .maintopright2,.maintopright3{display: flex; flex: 1;align-items: center;color: white;
@@ -20,7 +20,7 @@ body{margin: 0px;width: 100%;}
 .star{margin-right:20px;}
 
 
-.wrapper{margin:150px 0px;}
+.wrapper{margin:70px 0px;}
 .main{display: flex;flex-direction: column;width: 100%;height: 600px;}
 .b{display: flex;align-items: center;border-bottom: 1px solid grey;flex: 1;
 font-size: 2rem;}
@@ -33,10 +33,10 @@ span{color: grey;}
 
 
 .footer{position: fixed;bottom:0px;display: flex;align-items: center;
-        height: 150px;background-color: white; width: 100%;z-index: 100;}
+        height: 70px;background-color: white; width: 100%;z-index: 100;}
 .footer1,.footer2{display: flex;flex: 1;justify-content: center;align-items: center;
                   }
-.button{border: 2px solid #5fc0cd; background-color: white; width: 75%;height: 100px;
+.button{border: 2px solid #5fc0cd; background-color: white; width: 75%;height: 50px;
         border-radius: 10px;color:#5fc0cd; font-size: 2rem; }
 .f{background-color: #5fc0cd; color: white;}
 .y{white-space: nowrap;}
