@@ -1,44 +1,31 @@
-html,body{height: 100%;width: 100%;}
-body{background-color: #eff0f4;margin:0px; padding: 0px;}
-#header{background-color: #5fc0cd;
-width: 100%;
-height: 100px;
-color: white;
-font-size: 2em;}
-#main{width: 100%;
-height: 460px;}
-#footer{width: 100%;
-height: 5%;}
-#login{margin: 0px; font-weight: bold;width: 60%;
-height: 100%; text-align: center;float: left;}
-#register{float: left;width: 20%;height: 100%; 
-margin:0px; text-align: center;}
-#close{float: right; width: 20%;height: 100%; 
-margin:0px;text-align: center;}
-#login,#register,#close{line-height:100px;}
-#phone,#lock{background-color: white;margin:20px 0px 0px 0px;
- width: 15%;height: 150px;float: left;
-text-align: center;line-height: 150px;}
- #phonenumber,#password{background-color: white;
- 	height: 150px;float: left;width: 85%;margin:20px 0px 0px 0px;}
- 	img{margin:0px;}
- 	input{margin:50px 0px;width: 98%;height:50px;
- 		border: none;border-left: 2px solid #eaedee;
- 		outline: none;
- 		padding-left: 2%;}
- 		#login2{width: 100%;
- 			height: 100px;
- 			background-color: #5fc0cd;
- 			float: left;
- 			font-weight: bold;text-align: center;
- 			line-height: 100px;color: white;
- 			font-size: 2em;
- 			letter-spacing: 20px;
- 			margin-top: 20px;}
-#footer{width: 100%;height: 50px;
-	text-align: right;
-color: #5fc0cd;
-text-decoration: underline;
-margin:20px 0px 0px 0px;
-}
-#forget{padding-right: 20px;}
+body{margin: 0px; width: 100%;background-color: #eff0f4;}
+/*头部*/
+.header{width: 100%;display: flex;}
+.close,.login,.register,.a{display: flex; color: white;
+	                    justify-content: center;
+	                    align-items: center;
+	                    background-color: #5fc0cd;
+	                    height: 150px;}
+.login{width: 70%; font-size:3rem;}
+.close,.register{flex:1; font-size: 2rem;}
+/*主体*/	                    
+.main{display: flex; flex-direction: column;
+      justify-content: space-around; 
+      height: 350px;margin:12.5px 0px 12.5px 0px;}
+.main1,.main2{display: flex; align-items: center;
+	          background-color: white;
+	          height:150px;}
+/*登录按钮*/
+input{margin-left: 50px;}
+.input{border:none; border-left: 1px solid black;
+       font-size: 2rem;padding-left: 25px;
+       outline: none;}
+.image{transform: scale(1.5);}
+.a{font-size: 3rem; letter-spacing: 1rem;
+   margin-top: 75px;}
+ /*尾部*/
+ .forget{display: flex;color: #5fc0cd;height: 80px; align-items: center;
+         justify-content: flex-end;padding-right: 50px;
+         font-size: 2rem;}  
+
+       
