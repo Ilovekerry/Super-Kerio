@@ -59,7 +59,7 @@ background-image: url(images/arrow.png);background-color: transparent;}
 .circle,.write{width: 150px;height: 150px;border:none;
 background-repeat: no-repeat;background-position: center;}
 .circle{background-image: url(images/background.png);background-size: 140px 140px;}
-.write{background-color: transparent;background-image: url(images/write.png);
+.write{background-color: transparent;background-image: url(images/pen.png);
 background-size: 70px 70px;}
 
 
