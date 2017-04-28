@@ -1,13 +1,13 @@
 body{margin: 0px;width: 100%;}
-.header{display: flex;position: fixed;top: 0px;align-items: center;min-width: 900px;
+.header{display: flex;position: fixed;top: 0px;align-items: center;
         height: 150px;background-color: #5fc0cd; width: 100%;z-index: 100;}
 .back,.headerright{display: flex;align-items: center;justify-content: center;width: 100px; transform: scale(1.5);}
 .headermiddle{display: flex;flex: 1;justify-content: center;align-items: center;color: white;font-size: 3rem;}
 .maintop{display: flex;height: 500px; background-image: url(images/background.png);
 	background-repeat: no-repeat;background-size: cover;}
-.maintopleft{display: flex;justify-content: center;align-items: center;width: 300px;}
-.maintopright{display: flex;flex: 1;flex-direction: column;}
-.maintoprightright{flex: 1;}
+.maintopleft{display: flex;justify-content: center;align-items: center;flex: 1;}
+.maintopright{display: flex;flex: 3;flex-direction: column;}
+
 .maintopright1,.maintopright4{height:180px;}
 .maintopright2,.maintopright3{display: flex; flex: 1;align-items: center;color: white;
  font-size: 3rem;}
@@ -16,7 +16,7 @@ body{margin: 0px;width: 100%;}
 
 .line{margin: 0px 20px;}
 .position{margin-right: 20px;}
-.people{transform: scale(1.3);}
+
 .star{margin-right:20px;}
 
 
@@ -33,11 +33,10 @@ span{color: grey;}
 
 
 .footer{position: fixed;bottom:0px;display: flex;align-items: center;
-        height: 150px;background-color: white; width: 100%;z-index: 100; min-width: 900px;}
+        height: 150px;background-color: white; width: 100%;z-index: 100;}
 .footer1,.footer2{display: flex;flex: 1;justify-content: center;align-items: center;
                   }
 .button{border: 2px solid #5fc0cd; background-color: white; width: 75%;height: 100px;
         border-radius: 10px;color:#5fc0cd; font-size: 2rem; }
 .f{background-color: #5fc0cd; color: white;}
 .y{white-space: nowrap;}
-.w{height: 1100px;min-width: 900px;margin: 0 auto;}
