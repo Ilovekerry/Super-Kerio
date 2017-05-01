@@ -24,15 +24,15 @@ body{width: 100%;background-color: #f0f0f0;height: 1410px;}
 	border-bottom: 1px solid #fbb435;
 	background-color: white;}
 .contentbody{flex: 1;width: 100%;}
-.contentbodyright{width: 60px;height: 100%;background-image: url(images/triangle.png);
-	background-position: center;background-repeat: no-repeat;}
+.contentbodyright{width: 60px;height: 780px;background-image: url(images/triangle.png);
+	background-position: center;background-repeat: no-repeat;margin-top: 24px;margin-bottom: 114px;}
 .contentbodyleft{flex: 1;height: 100%;}
-.contentbodyrightbtn{width: 60px;height: 100%;border: none;
+.contentbodyrightbtn{width: 60px;height:100%;border: none;
 	background-color: transparent;}
 .contentbodyleftleft{width: 60px;height: 100%;}
-.contentwrapper{flex:1;height:895px;margin-top: 23px;background-color: white;
+.contentwrapper{flex:1;height:895px;margin-top: 24px;background-color: white;
 	flex-direction: column;}
-.contentfoot{width: 100%;height: 25px;}
+.contentfoot{width: 100%;height: 24px;}
 .edition{flex: 1;width: 100%;flex-direction: column;}
 .content1button{flex: 2;width: 100%;}
 .content1text{flex:1; width: 100%;color:#9a9a9a;font-size: 2rem;}
