@@ -1,0 +1,48 @@
+body{width: 100%;margin:0px;background-color: #29bde0;}
+.header,.nav,.headerleft,.headercenter,.headerright,.navtop,navtop,.navbottom,.navtopleft,
+.navtopright,.navtoprightbtn,.contentwrapper,.content,.content2,.content3,.content2centertop,
+.content2centerbottom,.content2center,.footer,.footertop,.footerbottom,.footertopcenter,
+.footerbtn,.content3box,.content3wrapper{display: flex;justify-content: center;align-items: center;}
+
+.headnavwrapper{width: 100%;height: 400px;position: fixed;top: 0;}
+
+.header{width: 100%;height: 150px;background-color: #29bde0;}
+.headerleft,.headerright{width: 150px;height: 100%;}
+.headerleftbtn,.headerrightbtn{width: 100%;height: 100%;background-image: url(images/menu2.png);
+	background-repeat: no-repeat;background-position: center;background-color: transparent;}
+.headerrightbtn{background-image: url(images/close2.png);}
+.headercenter{flex: 1;height: 100%;color: white;font-size: 5rem;}
+
+
+.nav{width: 100%;height: 250px;background-color: #b9e9f5;flex-direction: column;}
+.navtop{width: 100%;height: 150px;}
+.navtopright{width: 150px;height: 100%;}
+.navtoprightbtn{background-image: url(images/playbackground2.png);background-repeat: no-repeat;background-position: center;
+	background-color: transparent;width: 100%;height: 100%;padding: 6px;}
+.navtopleft{flex: 1;height: 100%;padding-left: 100px;color: black;font-size: 4rem;justify-content: flex-start;}
+.navmiddle{width: 100%;height: 13px;background-color: #29bde0;display: flex;align-items: flex-start;flex-direction: column;
+	padding-left: 130px;}
+.navbottom{width: 100%;height: 87px;background-color: #29bde0;padding-left: 130px;color: white;font-size: 4rem;
+	justify-content: flex-start;}
+
+
+.contentwrapper{width: 100%;height: 1440px;justify-content: flex-start;flex-wrap: wrap;
+	margin:435px 0 380px 0;}
+.content{width: 33.3333%;height: 25%;flex-direction: column;}
+.contenttop{align-self: flex-start;}
+.contentbottom{align-self: flex-end;}
+.content2{width: 100%;height: 250px;}
+.content2center{width: 250px;height: 250px;border:10px solid white;flex-direction: column;}
+.content2centertop{flex: 4;background-color: #f5c97b;width: 100%;font-size: 5rem;}
+.content2centerbottom{flex:1;background-color: #83b09a;width: 100%; font-size: 4rem;color: white;}
+.content3wrapper,.content3{width: 250px;flex: 1;justify-content: space-between;}
+.content3box{width: 50px;height: 50px;background-color: white;}
+.content3img{width: 30px;height: 30px;}
+a:link,a:visited,a:active,a:hover{ text-decoration: none;}
+
+
+.footer{width: 100%;height: 380px;position: fixed; bottom: 0px;background-color: orange;flex-direction: column;background-color: #29bde0;}
+.footertop{flex:17;width: 100%;}
+.footertopcenter{height: 180px;width: 70%;background-color: #fbb435;}
+.footerbtn{width: 100%;height: 100%;background-color: transparent;border:none;color: white;font-size: 6rem;letter-spacing: 20px;}
+.footerbottom{flex:2;width: 100%;}

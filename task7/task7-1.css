@@ -1,0 +1,41 @@
+body{width: 100%;background-color: #f0f0f0;height: 1410px;}
+.header,.nav,.contenthead,.contentbody,contentbodyright,.contentbodyleft,
+.content,.contentwrapper,.edition,.content1button,.contentfootcenter,.contentfoot,
+.content1text{display: flex;justify-content: center;align-items: center;}
+
+.header{justify-content: flex-start;height:150px;background-color: #29bde0;
+	position: fixed;top: 0px;width: 100%;}
+.headercontainer{width: 68px;height: 54px;background-image: url(images/menu.png);
+	background-size: 68px;height: 54px;
+	background-repeat: no-repeat;
+	margin-left: 20px;}
+.headerbtn{width: 68px;height: 54px;background-color: transparent;border: none;}
+
+
+.nav{width: 90%;height: 180px;background-color: white;margin:180px auto 30px auto;}
+.navbtn{width:100%;height: 180px;background-color: white;
+	border:1px solid #c9c9c9;font-size: 3rem;padding: 0;color: #9a9a9a;border-radius: 0;}
+.navimg{float: right;padding-right: 20px;}
+
+
+.content{width: 90%;height: 1070px;border:1px solid #c9c9c9;flex-direction: column;
+	border-radius: 0;margin:0 auto;justify-content: flex-start;background-color: white;}
+.contenthead{width: 100%;height: 150px;color: #fbb435;font-size: 3rem;
+	border-bottom: 1px solid #fbb435;
+	background-color: white;}
+.contentbody{flex: 1;width: 100%;}
+.contentbodyright{width: 60px;height: 780px;background-image: url(images/triangle.png);
+	background-position: center;background-repeat: no-repeat;margin-top: 24px;margin-bottom: 114px;}
+.contentbodyleft{flex: 1;height: 100%;}
+.contentbodyrightbtn{width: 60px;height:100%;border: none;
+	background-color: transparent;}
+.contentbodyleftleft{width: 60px;height: 100%;}
+.contentwrapper{flex:1;height:895px;margin-top: 24px;background-color: white;
+	flex-direction: column;}
+.contentfoot{width: 100%;height: 24px;}
+.edition{flex: 1;width: 100%;flex-direction: column;}
+.content1button{flex: 2;width: 100%;}
+.content1text{flex:1; width: 100%;color:#9a9a9a;font-size: 2rem;}
+.editionbtn{width: 100%;height: 100%;border: none;background-color: #69d1e9;color: white;font-size: 3rem;}
+.contentfootcenter{width: 30%;height: 100%;}
+.circle{width: 15px;height: 15px;border-radius: 50%;background-color: #f0f0f0; margin-left: 7px;}
