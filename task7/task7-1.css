@@ -28,7 +28,7 @@ body{width: 100%;background-color: #f0f0f0;height: 1410px;}
 	background-position: center;background-repeat: no-repeat;margin-top: 24px;margin-bottom: 114px;}
 .contentbodyleft{flex: 1;height: 100%;}
 .contentbodyrightbtn{width: 60px;height:100%;border: none;
-	background-color: transparent;}
+	background-color: transparent;outline: none!important;}
 .contentbodyleftleft{width: 60px;height: 100%;}
 .contentwrapper{flex:1;height:895px;margin-top: 24px;background-color: white;
 	flex-direction: column;}
