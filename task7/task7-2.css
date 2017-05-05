@@ -21,6 +21,7 @@ body{width: 100%;margin: 0;}
 	background-image: url(images/playbackground2.png);background-repeat: no-repeat;}
 .header2rightbtn{background-image: url(images/play2.png);background-repeat: no-repeat;background-position: 38px 14px;}
 .header3{width: 100%;height: 13px;align-items: flex-start;justify-content: flex-start;padding-left: 70px;}
+.triangle{width: 0;height: 0;border:8px solid transparent;border-top:13px solid #b9e9f5;}
 .header4{width: 100%;height: 27px;color: white;padding-left: 70px;justify-content: flex-start;font-size: 1rem;}
 .contentwrapper{width: 100%;height: 615px; margin-top: 170px;margin-bottom: 95px;background-color: #29bde0;}
 .content{width: 100%;height: 600px;margin-top: 15px;background-color: #29bde0;
