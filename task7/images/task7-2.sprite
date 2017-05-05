@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="task7-2" IsPhone="false" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="add2.png" LocationX="0" LocationY="0" />
+    <Sprite Path="search2.png" LocationX="0" LocationY="14" />
+    <Sprite Path="target2.png" LocationX="0" LocationY="35" />
+    <Sprite Path="knife2.png" LocationX="0" LocationY="60" />
+  </SpriteList>
+</SpriteFile>

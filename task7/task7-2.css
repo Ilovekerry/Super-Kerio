@@ -2,10 +2,10 @@ body{width: 100%;margin: 0;}
 
 .header1,.header1left,.header1center,.header1right,.header2,.header2left,
 .header2right,.header3,.header4,.footer1,.footer1inside,.contentwrapper,
-.content,.column,.contentboxtop1,.contentboxtop2,.contentboxbottom,.icon{display: flex;justify-content: center;align-items: center;}
+.content,.column,.contentboxtop1,.contentboxtop2,.contentboxbottom,.icon,.footer1inside{display: flex;justify-content: center;align-items: center;}
 
-.bodywrapper{width: 100%;height: 660px;max-width: 640px;margin: auto;background-color: #29bde0;}
-.headerwrapper{width: 100%;height: 170px;position: fixed;top: 0px;max-width: 640px;background-color: #29bde0;}
+.bodywrapper{width: 100%;height: 660px;max-width: 640px;margin: auto;background-color: #29bde0;min-width: 320px;}
+.headerwrapper{width: 100%;height: 170px;position: fixed;top: 0px;max-width: 640px;background-color: #29bde0;min-width: 320px;}
 
 .header1{width: 100%;height: 70px;}
 .header1left,.header1right{width: 85px;height: 100%;background-position: center;
@@ -30,12 +30,17 @@ body{width: 100%;margin: 0;}
 .contentboxtop{width: 90px;height: 90px;border: 5px solid white;color: black;display: flex;flex-direction: column;}
 .contentboxtop1{width: 100%;height: 72px;background-color: #f5c97b;font-size: 1.5rem;}
 .contentboxtop2{width: 100%;height: 18px;background-color: #83b09a;color: white;}
-.contentboxbottom{justify-content: space-around;height: 60px;}
+.contentboxbottom{justify-content: space-around;height: 60px; display: none;}
 .icon{width:20px;height: 20px;background-color: white;}
 img{width: 15px;height: 15px;}
+.contentrow:hover .contentboxbottom{display: flex;}
 
 
-.footerwrapper{width: 100%;height: 95px;position: fixed;bottom: 0px;max-width: 640px;background-color: #29bde0;}
+.footerwrapper{width: 100%;height: 95px;position: fixed;bottom: 0px;max-width: 640px;background-color: #29bde0;min-width: 320px;}
 .footer1{width: 100%;height: 85px;}
-.footer1inside{height: 43px;width: 75%;background-color: #fbb435;color: white;font-size: 2rem;}
+.footer1inside{height: 43px;width: 75%;background-color: #fbb435;color: white;font-size: 1.5rem;}
 .footer2{width: 100%;height: 10px;}
+.footerbtn{width: 100%;height: 100%;border: none;background-color: transparent;font-size: 1.5rem;color: white;padding: 0;}
+a{width: 100%;height: 100%;}
+.music{position: absolute;top:84px;height: 32px;right: -375px;
+	z-index: 2;color: transparent;opacity: 0;transform: scale(2);}
