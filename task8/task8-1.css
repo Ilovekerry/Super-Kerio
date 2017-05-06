@@ -1,0 +1,34 @@
+body{margin: 0;font-size: 62.5%;width: 100%;min-width: 300px;}
+.header{width: 100%;display: flex;}
+.headerleft{width: 150px;color: #29b078;font-size: 1.3rem;display: flex;
+	align-items: center;justify-content: flex-start;padding:10px 0;}
+.headerright{width: 100px;display: flex;align-items: center;justify-content:space-between;padding:10px 0;}
+.headerleftwrapper,.headerrightwrapper{width: 50%;display: flex;justify-content: center;}
+
+
+.nav{background-color: #29b078;display: flex;height: 100px;}
+.navleft{flex: 4;}
+.navright{flex: 1;}
+.navcenter{display: flex;}
+.navgation{font-size: 1.5rem;padding: 0 10px;}
+.navgationtop{height: 97px;width: 50px;display: flex;justify-content: center;align-items: center;color: white;}
+.navgationbottom{width: 50px;height: 3px;background-color: white;display: none;padding: 0 10px;}
+.navgation:hover .navgationbottom{display: block;}
+
+
+.banner{width: 100%;}
+div.item img{width:100%;}
+div#carousel-example-generic{width:100%;margin:0 auto;}
+
+.contenttop,.contentmiddle{margin-top: 8%;}
+.contenttopinside{display: flex;justify-content: center;align-items:center;flex-direction: column;}
+.contentimg{height: 60px; display:flex; align-items: center;justify-content: center;}
+.contenttopinside3{border-right: 2px dashed lightgrey;}
+.contenttopinside4{display: flex;justify-content: center;align-items: center;height: auto;height: 143px;}
+.number{display: flex;justify-content: center;align-items: flex-start;flex-direction: column;}
+.number p{display: flex;align-items: baseline;}
+@media screen and (max-width: 767px){.number{align-items: center;}}
+
+.howtostudy{display: flex;justify-content: center;align-items: center;}
+.learnways{display: flex;justify-content: center;align-items: center;width: 150px;}
+.order{background:url(images/circle.png) no-repeat center;width: 40px;height: 40px;}
