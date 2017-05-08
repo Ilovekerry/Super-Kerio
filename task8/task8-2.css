@@ -1,0 +1,59 @@
+body{margin: 0;font-size: 62.5%;width: 100%;min-width: 300px;background-color: white;}
+p{margin: 0;}
+.header{width: 100%;display: flex;padding: 1% 0;}
+.headerleft{width: 50%;color: #29b078;font-size: 1.3rem;display: flex;
+	align-items: center;justify-content: center;}
+.headerright{width: 50%;display: flex;align-items: center;justify-content:center;}
+.headerright img{margin: 0 2%;}
+
+
+
+.nav{background-color: #29b078;display: flex;}
+.navleft{flex: 1;align-items: center;justify-content: center;display: flex;min-width: 60px;}
+.navleft img{max-width: 100%;height: auto; padding: 2% 0;}
+.navright{width: 60%;min-width: 240px;display: flex;justify-content: center;align-items: center;}
+.navgation{width: 10%;display: flex;justify-content: center;align-items: center;flex-direction: column;height: 100%;}
+.navgationtop{width: 100%;display: flex;justify-content: center;
+	align-items: center;color: white;flex:10;}
+.navgationbottom{width:100%;background-color: white;opacity: 0;justify-content: flex-end;flex:0.5;}
+.navgation:hover .navgationbottom{opacity: 1;}
+@media screen and (max-width: 767px){.navgation{margin: 0 2%;}}
+
+
+
+.direction,.front,.homepage{padding: 1% 0;border-bottom: 1px solid #d0d6d9;}
+.direction{border-color: #edf1f2;}
+span{padding: 0 1rem;}
+.intro-content{background-color: white; margin: 5%; box-shadow:2px 2px 3px #aaaaaa;}
+.intro-top{display: flex;justify-content: center;align-items: center;}
+.intro-topleft{padding: 5% 15px;}
+
+.intro-content{position: relative;}
+.hidden1{display: flex;flex-direction: column;justify-content: center;align-items: center;
+	position: absolute;top: 0;left: 0;background-color:rgba(0,0,0,0.5);
+	 height: 100%;width: 100%;z-index: -1;}
+.hiddenwrapper1{padding: 15px 5%;display: flex;flex-direction: column;justify-content: center;align-items: center;z-index: 5;}
+.hiddencontent1{font-size: 1.5rem;padding: 10px 5px 30px 5px;text-indent: 2rem;z-index: 5;color: white;}
+.hiddentitle1{color: white;}
+
+
+.intro-content:hover .hidden1{z-index: 2;}
+.intro-topright p{word-break: break-all;}
+
+
+
+
+.footerleft{display: flex;flex-direction: column;}
+.footerwrapper{background-color: #29b078;}
+
+.about,.jnshu{display: flex;padding: 4% 0;}
+.aboutus,.contactus,.coo{border-right: 2px solid white;padding: 0 2%;}
+.aboutus{padding-left: 0;}
+.coo{border-right: none;}
+.footerbottom{border-top: 1px solid white;text-align: center;}
+.websitewrapper1{display: flex;padding: 3% 0;}
+.website{padding-top: 3%;}
+.it,.tablegame{padding-left: 2%;}
+.footerright{padding: 1% 0;display: flex;flex-direction: column;align-items: center;}
+
+
