@@ -1,29 +1,33 @@
 body{margin: 0;font-size: 62.5%;width: 100%;min-width: 300px;background-color: white;}
 p{margin: 0;}
-.header{width: 100%;display: flex;padding: 1% 0;}
-.headerleft{width: 50%;color: #29b078;font-size: 1.3rem;display: flex;
-	align-items: center;justify-content: center;}
-.headerright{width: 50%;display: flex;align-items: center;justify-content:center;}
-.headerright img{margin: 0 2%;}
+
+.header{display: flex;}
+.headerleft{flex: 1;justify-content: flex-start;align-items: center;display: flex;}
+.headerright{flex: 1;display: flex;justify-content: flex-end;align-items: center;padding: 1%;}
+.headerright a{margin-right:5%;}
+.headermax{background-color: #fff;width: 100%;}
 
 
+.navigation{background-color: #29b078;}
+.navbar-default{margin-bottom: 0;}
+.navbar-brand img{max-width: 100%;}
+.navbar-brand{width: 217px;display: flex;align-items: center;}
+.navigation .container{background-color: #29b078;border: none;}
+.navbar-toggle{margin-top: 8px;margin-bottom: 8px;}
+li a{color: white!important;font-size: 2rem;}
+li{border-bottom: 3px solid transparent;}
+@media screen and (max-width: 767px){.nav1{margin-top: 10px;}.navbar{padding-top: 10px;padding-bottom: 10px;}}
+li{text-align: center;}
+@media screen and (min-width: 768px){li:hover{border-bottom-color: white;}
+	li{padding-top: 25px;padding-bottom: 25px;}.navbar-brand{padding-top: 46.5px;}}
 
-.nav{background-color: #29b078;display: flex;}
-.navleft{flex: 1;align-items: center;justify-content: center;display: flex;min-width: 60px;}
-.navleft img{max-width: 100%;height: auto; padding: 2% 0;}
-.navright{width: 60%;min-width: 240px;display: flex;justify-content: center;align-items: center;}
-.navgation{width: 10%;display: flex;justify-content: center;align-items: center;flex-direction: column;height: 100%;}
-.navgationtop{width: 100%;display: flex;justify-content: center;
-	align-items: center;color: white;flex:10;}
-.navgationbottom{width:100%;background-color: white;opacity: 0;justify-content: flex-end;flex:0.5;}
-.navgation:hover .navgationbottom{opacity: 1;}
-@media screen and (max-width: 767px){.navgation{margin: 0 2%;}}
 
 
 
 .direction,.front,.homepage{padding: 1% 0;border-bottom: 1px solid #d0d6d9;}
 .direction{border-color: #edf1f2;}
 span{padding: 0 1rem;}
+.headerright span{padding:0;}
 .intro-content{background-color: white; margin: 5%; box-shadow:2px 2px 3px #aaaaaa;}
 .intro-top{display: flex;justify-content: center;align-items: center;}
 .intro-topleft{padding: 5% 15px;}
