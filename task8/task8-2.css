@@ -1,4 +1,4 @@
-body{margin: 0;font-size: 62.5%;width: 100%;min-width: 300px;background-color: white;}
+body{margin: 0;font-size: 62.5%;width: 100%;min-width: 300px;background-color: #fafafa;}
 p{margin: 0;}
 
 .header{display: flex;}
@@ -16,9 +16,10 @@ p{margin: 0;}
 .navbar-toggle{margin-top: 8px;margin-bottom: 8px;}
 li a{color: white!important;font-size: 2rem;}
 li{border-bottom: 3px solid transparent;}
+li:hover{border-bottom-color: white;}
 @media screen and (max-width: 767px){.nav1{margin-top: 10px;}.navbar{padding-top: 10px;padding-bottom: 10px;}}
 li{text-align: center;}
-@media screen and (min-width: 768px){li:hover{border-bottom-color: white;}
+@media screen and (min-width: 768px){
 	li{padding-top: 25px;padding-bottom: 25px;}.navbar-brand{padding-top: 46.5px;}}
 
 
@@ -26,7 +27,10 @@ li{text-align: center;}
 
 .direction,.front,.homepage{padding: 1% 0;border-bottom: 1px solid #d0d6d9;}
 .direction{border-color: #edf1f2;}
+.direction{font-size: 2rem;}
 span{padding: 0 1rem;}
+.direction span{padding: 0.5rem 1rem;}
+.direction span:hover{background-color: #29b078;}
 .headerright span{padding:0;}
 .intro-content{background-color: white; margin: 5%; box-shadow:2px 2px 3px #aaaaaa;}
 .intro-top{display: flex;justify-content: center;align-items: center;}
@@ -48,7 +52,7 @@ span{padding: 0 1rem;}
 
 
 .footerleft{display: flex;flex-direction: column;}
-.footerwrapper{background-color: #29b078;}
+.footerwrapper{background-color: #29b078;color: white;}
 
 .about,.jnshu{display: flex;padding: 4% 0;}
 .aboutus,.contactus,.coo{border-right: 2px solid white;padding: 0 2%;}
@@ -59,5 +63,5 @@ span{padding: 0 1rem;}
 .website{padding-top: 3%;}
 .it,.tablegame{padding-left: 2%;}
 .footerright{padding: 1% 0;display: flex;flex-direction: column;align-items: center;}
-
+.footertop a{color: currentColor;}
 

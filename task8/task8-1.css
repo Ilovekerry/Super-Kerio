@@ -1,4 +1,4 @@
-body{margin: 0;font-size: 62.5%;width: 100%;min-width: 300px;background-color: white;}
+body{margin: 0;font-size: 62.5%;width: 100%;min-width: 300px;background-color: #fafafa;}
 p{margin: 0;}
 
 .header{display: flex;}
@@ -14,12 +14,12 @@ p{margin: 0;}
 .navbar-brand{width: 217px;display: flex;align-items: center;}
 .navigation .container{background-color: #29b078;border: none;}
 .navbar-toggle{margin-top: 8px;margin-bottom: 8px;}
-li a{color: white!important;font-size: 2rem;}
+.navbar-right li a{color: white!important;font-size: 2rem;}
 div ul li{border-bottom: 3px solid transparent;}
+div ul li:hover{border-bottom-color: white;}
 @media screen and (max-width: 767px){.nav1{margin-top: 10px;}.navbar{padding-top: 10px;padding-bottom: 10px;}}
 li{text-align: center;}
-@media screen and (min-width: 768px){div ul li:hover{border-bottom-color: white;}
-	div ul li{padding-top: 25px;padding-bottom: 25px;}.navbar-brand{padding-top: 46.5px;}}
+@media screen and (min-width: 768px){div ul li{padding-top: 25px;padding-bottom: 25px;}.navbar-brand{padding-top: 46.5px;}}
 
 
 
@@ -40,38 +40,48 @@ div#carousel-example-generic{width:100%;margin:0 auto;}
 
 
 .howtostudy,.goodlearner,.cooperationtitlereal,.linktitle{display: flex;justify-content: center;align-items: center;margin-bottom: 5%;}
-.learnways{display: flex;justify-content: flex-start;align-items: center;margin-bottom: 1%;}
-.order{padding: 8%;width: 1rem;height: 1rem;
+.learnways{display: flex;justify-content: flex-start;align-items: center;margin-bottom: 1%;margin-top: 1%;padding: 0;}
+.order{padding: 2rem;width: 1rem;height: 1rem;
 	display: flex;align-items: center;justify-content: center;border-radius: 50%;box-shadow: 1px 1px 2px #888888;}
 .learnways p{padding-left: 1rem;}
-@media screen and (max-width: 767px){.order{padding: 5%;}}
-@media screen and (max-width: 1199px){.arrows{display: none;}}
 
-.arrows{margin: 0 10%;}
+@media screen and (min-width: 1200px){.arrowswrapper4,.arrowswrapper8{opacity: 0;}}
+@media screen and (max-width: 1200px){.learnways{justify-content: center;}
+.arrows{text-align: center;}.arrows img{transform: rotate(90deg);}.arrowswrapper8{opacity: 0;}}
+
+
+
+.arrows{margin: 0 10%;padding: 27.19px 15px;}
 .learnways div p{width: 100%;}
-.para{width: 13rem;}
-@media screen and (max-width: 767px){.learnways{justify-content: center;}.para{width: 50%;}}
+.para{width: 15rem;}
+
 
 
 .learnercontainer{display: flex;flex-direction: column;justify-content: center;align-items: center;
-	background-color: #29b078;margin: 5% 15%;box-shadow: 1px 2px lightgreen;}
-.introduction{padding:0 20% 10% 20%;color: white;}
+	background-color: white;margin: 5% 8%;box-shadow: 1px 2px 2px 2px #e7e7e7;}
+.introduction{padding:0 10% 5% 10%;color: #999;font-size: 1.5rem;}
 .headericon{padding: 5% 0;}
 .name{font-weight: bold;color: black;}
 .dotscontainer{display: flex;justify-content: center;align-items: center;}
 .realdots{width: 0.5%;padding: 0.5%;border-radius: 50%;background-color: grey;margin: 1%;}
 
 .cooperationcontent1 img{max-width: 100%;height:auto;}
-.cooperationcontent{margin: 5% auto;}
-.cooperationcontent1{width: 20%;display: flex;justify-content: center;}
+.cooperationcontent{margin: 5% auto;box-shadow: 2px 2px 2px 2px #999;}
+.cooperationcontent1{width: 20%;display: flex;justify-content: center;padding: 5% 5%;}
+.cooperationcontent1:hover{box-shadow: 2px 2px 2px 2px #999;}
 @media screen and (max-width: 767px){.cooperationcontent1{width: 100%;margin: 5% 0;}}
 .link1{margin: 0;padding: 0;font-size: 0.5rem;display: flex;
 	justify-content: center;justify-content: center;min-width: 6rem;}
-.friend{width: 6rem;display: flex;justify-content: flex-start;}
+.friend{width: 6rem;display: flex;justify-content: flex-start;border-bottom: 2px solid transparent;}
+.friend{color:#999;}
+.friend a:hover{text-decoration: none;}
+.friend a{color: currentColor;}
+.friend:hover{border-color: #26a26f;}
+
 
 
 .footerleft{display: flex;flex-direction: column;}
-.footerwrapper{background-color: #29b078;}
+.footerwrapper{background-color: #29b078;color: white;}
 
 .about,.jnshu{display: flex;padding: 4% 0;}
 .aboutus,.contactus,.coo{border-right: 2px solid white;padding: 0 2%;}
@@ -83,5 +93,5 @@ div#carousel-example-generic{width:100%;margin:0 auto;}
 .it,.tablegame{padding-left: 2%;}
 .footerright1{padding: 1% 0;display: flex;flex-direction: column;align-items: center;}
 .footerright{display: flex;justify-content: flex-start;padding: 1% 0;}
-
+.footertop a{color: currentColor;}
 
