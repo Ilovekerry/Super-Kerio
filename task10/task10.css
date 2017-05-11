@@ -1,0 +1,84 @@
+body{margin: 0;width: 100%;font-size: 62.5%;height: 2000px;
+	min-width: 300px;background-color: #f9f9f9;}
+.headerwrapper{background-color: #1d7ad9;color: white;font-size: 1.3rem;}
+.headerright{display: flex;justify-content: flex-end;align-items: center;}
+.loginwrapper{display: flex;}
+.login{background-color: white;color: black;}
+.headerleft,.signin,.login{padding-top: 1rem;padding-bottom: 1rem;}
+.signin,.login{padding:1rem 1rem;width: 5rem;}
+.signin{border-left:1px solid lightblue;}
+
+
+
+.navwrapper{padding-top:2%;padding-bottom: 2%;}
+
+.navbar{border: none;background-color: #f9f9f9;margin-bottom: 0;}
+.nav li{background-color: white;}
+.nav li:hover{background-color: #1d7ad9;}
+.nav li a:hover{color: white!important;}
+@media screen and (max-width: 768px) {.navwrapper{padding: 0;}
+	.other a{text-align: center;}}
+}
+@media screen and (min-width: 768px)
+{.other{margin-left: 11.8%;}.nav{width: 600px;}
+.other{border-radius: 10%;box-shadow: 1px 1px 1px #e6e6e6;}}
+.other a{font-size: 1.5rem;color: black!important;}
+
+
+.navbottomwrapper{background-color: white;}
+.bar{width: 100%;height: 100px;}
+.box1,.box2,.box3,.box4{width: 140px;height: 100px;position: relative;float: right;;}
+.line,.line1,.line2,.line3,.line4{background-color: grey;width: 100%;height: 10px;border-radius: 10px 10px;position: absolute;top: 20px;}
+.line{border-radius: 0;background-color: grey;}
+.circle{width: 30px;height: 30px;border-radius: 50%;background-color: grey;position: absolute;top: 10px;left: 55px;
+	display: flex;align-items: center;justify-content: center;color: white;}
+.box1:hover .line1{background-color: orange;}
+.box2:hover .line2{background-color: orange;}
+.box3:hover .line3{background-color: orange;}
+.box4:hover .line4{background-color: orange;}
+.box1:hover .circle4{background-color: orange;}
+.box2:hover .circle3{background-color: orange;}
+.box3:hover .circle2{background-color: orange;}
+.box4:hover .circle1{background-color: orange;}
+.box1:hover .text4{color: orange;}
+.box2:hover .text3{color: orange;}
+.box3:hover .text2{color: orange;}
+.box4:hover .text1{color: orange;}
+.line4r{border-bottom-left-radius: 10px 10px;border-top-left-radius: 10px 10px;}
+.line1r{border-bottom-right-radius: 10px 10px;border-top-right-radius: 10px 10px;}
+.strangetext{position: absolute;bottom: 0;width: 100%;text-align: center;font-size: 2rem;color: grey;}
+@media screen and (max-width: 767px){.navbottom .bar{margin: 0;padding: 0;}.box1,.box2,.box3,.box4{width: 70px;height: 50px;}
+	.line,.line1,.line2,.line3,.line4{height: 5px;top:12.5px;}
+	.circle{width: 15px;height: 15px;left: 27.5px;}
+	.strangetext{font-size: 1rem;}
+
+	}
+
+
+.pleasewrapper{display: flex;align-items: center;}
+.rectangle{background-color: blue;width: 0.5rem;height: 1.9rem;border-radius: 5px 5px;}
+.please{color: black;font-size: 1.7rem;padding-left: 0.5rem;}
+.boxtype{background-color: #e6e6e6;margin: 15px 0;font-size: 1.5rem;padding-top: 2%;padding-bottom: 2%;
+	color: #1d7ad9;display: flex;align-items: center;}
+
+.inputleftwrapper{padding-left: 0;}
+.selectwrapper{display: flex;justify-content: flex-end;align-items: center;}
+.inputleftwrapper div{padding-left: 40px;display: flex;align-items: center;}
+@media screen and (max-width: 767px){.inputleftwrapper div{text-align: left;}.boxtype{margin-right: 15px;}}
+.inputrow{background-color: white;}
+.boximg{display: flex;align-items: center;}
+.boximg img{padding-right: 6px;}
+label{width: 12px;height: 12px;background-color: white;border:1px solid #666;border-radius: 50%;
+	position:absolute;left: 40px;top: 2.4px;}
+
+input:checked+label{border:4px solid blue;}
+.inputleftwrapper input{opacity: 0;}
+.inputrow{margin-bottom: 5px;margin-top: 5px;}
+select{-webkit-appearance:none;background:url(images/arrow.png) no-repeat; background-size: 15px 15px;background-position: right 0;
+	padding-right: 1.5rem;}
+.boxsize input{opacity: 1;width: 4rem;}
+.inputleftwrapper1 div{display: block;}
+.inputleftwrapper1 .boxname{display: flex;align-items: center;}
+.inputleftwrapper1 .buding{padding-left: 25px;}
+
+.inputrightwrapper .buding2{float: right!important;}
