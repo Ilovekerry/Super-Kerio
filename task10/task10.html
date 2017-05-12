@@ -113,9 +113,9 @@
 <div class="contentwrapper">
 	<div class="contentcontainer container">
 		<div class="boxtyperow row">
-			<div class="boxtype col-xs-12"><div class="boximg"><img src="images/box.png"></div><span>选择箱型</span> </div>
+			<div class="boxtype col-xs-12 choosebox"><div class="boximg"><img src="images/box.png"></div><span>选择箱型</span> </div>
 		</div>
-		<div class="inputrow row">
+		<div class="inputrow row inputrow1">
 			<div class="inputleftwrapper col-sm-8 col-xs-8">
 			
 			<div class="col-sm-4 col-xs-12"><input type="radio" id="r1" name="boxname"><label for="r1"></label>对口箱</div> 
@@ -140,20 +140,21 @@
 		<div class="boxtyperow row">
 			<div class="boxtype col-xs-12"><div class="boximg"><img src="images/ruler.png"></div><span>确定尺寸</span> </div>
 		</div>
-		<div class="inputrow row">
+		<div class="blankwrapper inputrow2">
+		<div class="inputrow row sizeinputrow">
 			<div class="inputleftwrapper inputleftwrapper1 col-xs-10 row">
 			<div class="col-xs-12 col-sm-6 col-md-12 row buding">
-			<div class="col-md-3 boxname"><input type="radio" id="r4" name="boxname"><label for="r4"></label>外径</div> 
-			<div class="col-md-3 boxsize">长<input type="text" name="nothing">mm</div>
-			<div class="col-md-3 boxsize">宽<input type="text" name="nothing" >mm</div>
-			<div class="col-md-3 boxsize">高<input type="text" name="nothing" class="boxsize">mm</div>
+			<div class="col-md-3 boxname"><input type="radio" id="r4" name="boxname"><label for="r4"></label><span>外径</span></div> 
+			<div class="col-md-3 boxsize"><span>长</span><input type="text" name="nothing">mm</div>
+			<div class="col-md-3 boxsize"><span>宽</span><input type="text" name="nothing" >mm</div>
+			<div class="col-md-3 boxsize"><span>高</span><input type="text" name="nothing" class="boxsize">mm</div>
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-12 row buding">
-			<div class="col-md-3 boxname"><input type="radio" id="r5" name="boxname"><label for="r5"></label>内径</div>
-			<div class="col-md-3 boxsize">长<input type="text" name="nothing">mm</div>
-			<div class="col-md-3 boxsize">宽<input type="text" name="nothing">mm</div>
-			<div class="col-md-3 boxsize">高<input type="text" name="nothing">mm</div>			
+			<div class="col-md-3 boxname"><input type="radio" id="r5" name="boxname"><label for="r5"></label><span>内径</span></div>
+			<div class="col-md-3 boxsize"><span>长</span><input type="text" name="nothing">mm</div>
+			<div class="col-md-3 boxsize"><span>宽</span><input type="text" name="nothing">mm</div>
+			<div class="col-md-3 boxsize"><span>高</span><input type="text" name="nothing">mm</div>			
 			</div>
 
 			</div>
@@ -169,22 +170,22 @@
 				</div>
 			</div>
 		</div>
-
-
+		</div>
 
 
 		<div class="boxtyperow row">
 			<div class="boxtype col-xs-12"><div class="boximg"><img src="images/scissors.png"></div><span>选择材质</span> </div>
 		</div>
-		<div class="inputrow row">
-			<div class="inputleftwrapper col-sm-8 col-xs-8">
+		<div class="inputrow row inputrow3">
+			<div class="inputleftwrapper col-sm-10 col-xs-10">
 			
-			<div class="col-sm-4 col-xs-12"><input type="radio" id="r7" name="boxname"><label for="r7"></label>对口箱</div> 
-			<div class="col-sm-4 col-xs-12"><input type="radio" id="r8" name="boxname"><label for="r8"></label>飞机盒</div>
-			<div class="col-sm-4 col-xs-12"><input type="radio" id="r9" name="boxname"><label for="r9"></label>天地盖</div>
-		
+			<div class="col-sm-2 col-xs-12 row3"><input type="radio" id="r7" name="boxname"><label for="r7"></label>三层A瓦优质</div> 
+			<div class="col-sm-2 col-xs-12 row3"><input type="radio" id="r8" name="boxname"><label for="r8"></label>三层A瓦优质</div>
+			<div class="col-sm-2 col-xs-12 row3"><input type="radio" id="r9" name="boxname"><label for="r9"></label>三层A瓦优质</div>
+			<div class="col-sm-2 col-xs-12 row3"><input type="radio" id="r10" name="boxname"><label for="r10"></label>三层A瓦优质</div>
+			<div class="col-sm-2 col-xs-12 row3"><input type="radio" id="r11" name="boxname"><label for="r11"></label>三层A瓦优质</div>
 			</div>
-			<div class="inputrightwrapper col-sm-4 col-xs-4">
+			<div class="inputrightwrapper col-sm-2 col-xs-2">
 				<div class="selectwrapper">
 					<select>
 						<option>查看详情1</option>
@@ -197,13 +198,56 @@
 		</div>
 
 
-
-
-
-
+	<div class="nextstepwrapper row">
+		<div class="col-xs-12 nextstep">
+			
+				<div class="nextstepbtn"><button class="btn btn-danger btn-lg">下一步</button></div>
+			
+		</div>
 	</div>
 </div>
-<div class="footerwrapper"></div>
+</div>
+
+
+
+
+<div class="footerwrapper">
+	<div class="footercontainer container">
+		<div class="row">
+			<div class="col-md-4 col-sm-12">
+				<div class="footerleft">51包装网——纸箱包装首选服务平台</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="footercenter">
+					<div class="firstrow"><div><a href="#">关于我们</a></div>
+					<div><a href="#">配送流程</a></div>
+					<div><a href="#">联系我们</a></div></div>
+					<div class="secondrow">
+					<div><a href="#">下单指南</a></div>
+					<div><a href="#">媒体介绍</a></div>
+					<div style="opacity: 0">>媒体介绍</div></div>
+
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="footerright">
+					<div class="footerrightleft">
+						<div class="tel">TEL：400-0000-000</div>
+						<div class="tel">企业QQ：123456789</div>
+						<div class="tel">微信号：XXXXXXX</div>
+					</div>
+					<div class="footerrightright"><img src="images/qrcode.png"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="copyrightwrapper">
+	<div class="copyright">北京五一包装科技有限公司Copyright ©2015&nbsp;&nbsp; <span class="yellow">51baozhuang.com015&nbsp;&nbsp; All rights reserved.&nbsp;&nbsp;   京icp备99999999-1</span>
+</div>
+</div>
 
 
 </body>
