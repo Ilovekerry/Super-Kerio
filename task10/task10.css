@@ -87,7 +87,7 @@ input:checked+label{border:4px solid blue;}
 .sizeinputrow,.buding{width: 100%;margin-left: 0!important;margin-right: 0px!important;}
 select{-webkit-appearance:none;background:url(images/arrow.png) no-repeat; background-size: 15px 15px;background-position: right 0;
 	padding-right: 1.5rem;}
-.boxsize input{opacity: 1;width: 4rem;}
+.boxsize input{opacity: 1;width: 4rem;height: 23px;border: 1px solid lightgrey;}
 .inputleftwrapper1 div{display: block;}
 .inputleftwrapper1 .boxname{display: flex;align-items: center;}
 .buding2{float: right;padding-right: 0;}
