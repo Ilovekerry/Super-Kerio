@@ -86,4 +86,9 @@ body, html {
   padding-right: 2rem;
   padding-top: 1%; }
 
+@media screen and (max-width: 500px){.content-top img, .content-bottom img {
+	padding: 0 2rem;
+}
+}
+
 /*# sourceMappingURL=task11.css.map */
