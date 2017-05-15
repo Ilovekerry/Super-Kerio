@@ -1,0 +1,207 @@
+body, html {
+  width: 100%;
+  background-color: white;
+  font-size: 62.5%;
+  margin: 0;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+  body p, html p {
+    margin: 0; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5fc0cd;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0; }
+  .header .header-btn {
+    background-color: #55a8b3;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .header-btn button {
+      width: 8rem;
+      font-size: 2rem;
+      background-color: transparent;
+      border: none;
+      border-radius: 0.3rem;
+      color: white;
+      outline: none;
+      padding: 1rem 0;
+      cursor: pointer; }
+      .header .header-btn button:last-child {
+        background-color: white;
+        color: #5fc0cd; }
+  .header .header-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-right: 1rem; }
+    .header .header-right img {
+      max-width: 100%; }
+
+.nav {
+  margin-top: calc(43px + 2rem);
+  border: none;
+  border-bottom: 1px solid #afbac0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .nav > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    border: none; }
+    .nav > div > select {
+      width: 100%;
+      color: #afbac0;
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding: 1rem 0 1rem 30%;
+      border: none;
+      overflow: hidden;
+      border-right: 1px solid #afbac0; }
+      .nav > div > select option {
+        border: none;
+        font-size: 1.5rem;
+        padding: 0; }
+
+.third-select {
+  border: none !important; }
+
+@media screen and (max-width: 500px) {
+  .nav select {
+    padding-left: 20% !important;
+    font-size: 1.5rem !important; } }
+@media screen and (max-width: 400px) {
+  .nav select {
+    padding-left: 25% !important;
+    font-size: 1.5rem !important; } }
+.content, .content-inside {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 80px; }
+
+.content-inside {
+  margin-bottom: 0; }
+
+.canlender, .place {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(images/spirit.png);
+  margin: 0 1%; }
+
+.canlender {
+  background-position: 0 0; }
+
+.place {
+  background-position: 0 24px; }
+
+.content p, .content-inside p {
+  display: flex;
+  width: 100%;
+  color: #afbac0;
+  margin: 0.5rem 0; }
+
+.red {
+  color: red;
+  display: inline-flex;
+  width: 10rem; }
+  .red img {
+    height: 2rem;
+    width: 1.2rem;
+    margin: 0 1px; }
+
+.time {
+  display: inline-flex;
+  color: black;
+  padding-left: calc(2% + 24px); }
+
+.second-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between; }
+
+.content-inside {
+  border-bottom: 1px solid #afbac0;
+  padding: 2% 0; }
+
+@media screen and (min-width: 400px) {
+  .red img {
+    margin: 0 3%; }
+
+  .red {
+    width: 12rem; } }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fafb;
+  position: fixed;
+  bottom: 0;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 5px 0;
+  width: 100%; }
+  .footer .footer-inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; }
+    .footer .footer-inside .footer-left, .footer .footer-inside .footer-right {
+      background: url(images/home.png) no-repeat;
+      background-position: top;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-items: flex-end;
+      color: #5fc0cd;
+      font-size: 1.5rem;
+      width: 70px;
+      height: 65px;
+      padding-bottom: 5px; }
+    .footer .footer-inside .footer-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      background-color: #5fc0cd; }
+      .footer .footer-inside .footer-center img {
+        width: 40px;
+        height: 40px;
+        padding: 15px; }
+    .footer .footer-inside .footer-right {
+      background: url(images/people.png) no-repeat;
+      background-position: top;
+      color: #afbac0; }
+
+@media screen and (min-width: 480px) {
+  .content, .content-inside {
+    font-size: 2rem !important; }
+
+  .footer-left, .footer-right {
+    font-size: 2rem !important; } }
+@media screen and (max-width:400px){.nav select{font-size: 1.2rem!important;}}
+
+/*# sourceMappingURL=task12-2.css.map */
