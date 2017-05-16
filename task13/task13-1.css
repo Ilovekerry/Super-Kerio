@@ -1,0 +1,41 @@
+body,html{margin: 0;font-size:16px;}
+
+
+button{background-color: transparent;border: none;padding: 0;}
+.headwrapper,.navwrapper,.contentwrapper,.nav,.navbtn,.contenwrapper,
+.contenttop,.contentmiddle,.contentmiddleleft,.contentmiddleleft1,
+.contentmiddleleft2,.contentmiddleleft3,.contentfooter,.footer,.headerbtncontainer,a,.contentmiddleright
+{display: flex;justify-content: center;align-items: center;}
+.headwrapper,.navwrapper,.contentwrapper{width: 100%;max-width: 640px;min-width: 320px;margin: auto;left: 0;right: 0;}
+.headwrapper{height: 60px;background-color: #29bde0;position: fixed;top: 0;margin: auto;justify-content: flex-start;}
+.headerbtn{width: 40px; height: 30px;background: url(images/menu.png) center no-repeat;}
+.headerbtncontainer{width: 40px;height: 30px;padding-left: 20px;}
+
+
+.navwrapper{height: 100px;background-color: #f0f0f0;margin-top: 60px;}
+.nav{height: 70%;width: 90%;background-color: white;border: 1px solid #d0d0d0;}
+.navbtn{width: 100%;height: 100%;background:url(images/back.png) no-repeat 95% 50%;font-size: 1.3rem;color: #9a9a9a;}
+
+.contentwrapper{height: 560px;background-color: #f0f0f0;flex-direction: column;}
+.content{width: 90%;height: 100%;background-color: white;border: 1px solid #d0d0d0;}
+.contenttop{width: 100%;height: 50px;border-bottom: 1px solid orange;color: orange;font-size: 1.5rem;}
+.contentmiddle{width: 100%;height: 400px;}
+.contentmiddleleft{width: 90%;height: 100%;flex-direction: column;
+	align-items: flex-end;}
+.contentmiddleright{width: 10%;height: 100%;}
+.triangle{width: 0; height: 0;border: 20px solid transparent;border-left: 20px solid #fbb435;
+	position: relative;bottom: 8px;left: 11px;}
+.contentmiddleleft1{width: 88.88889%;flex: 3;flex-direction: column;align-items: flex-end;justify-content: flex-end;}
+.contentmiddleleft2{width: 100%;height: 73%;background-color: #29bde0;color: white; font-size: 1.5rem;}
+.contentbtn{width: 100%;height: 100%;background-color: #29bde0;color: white; font-size: 1.5rem;}
+.contentmiddleleft3{width: 100%;height: 20%;align-items: flex-end;color: #9a9a9a;font-size: 1.3rem;}
+.contentfooter{width: 100%;height: 50px;}
+.footer{width: 30%;height: 100%;justify-content: space-between;}
+.circle{width: 15px;height: 15px;border-radius: 50%;background-color: #f0f0f0;}
+.blank{width: 100%;height: 59px;background-color: #f0f0f0;}
+@media screen and (max-width: 400px){
+	.navbtn{
+		font-size: 1rem;
+	}
+	.contentmiddleleft3{font-size: 1rem;}
+}
