@@ -1,0 +1,303 @@
+$lightgreen:#29b078;
+$darkgreen:#26a26f;
+@mixin flex {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+@mixin xs {
+	flex-direction: column;
+		align-items:center;
+		>div{
+			width:70%;
+		}
+	}
+@mixin sm {
+	flex-wrap:wrap;
+	>div{
+		width: 45%;
+	}
+}
+//header
+.header{
+	width:100%;
+	@include flex;
+	font-size:1.5rem;
+	padding: 0.3rem 0;
+}
+.header-left{
+	flex:1;
+	text-align:left;
+	color:$lightgreen;
+}
+.header-right{
+	flex:1;
+	@include flex;
+	justify-content:flex-end;
+	img{
+		padding: 0 1rem;
+	}
+}
+@media screen and(max-width:500px) {
+	.header-left{
+		display: none;
+	}
+}
+//nav
+.nav-wrapper{
+	width:100%;
+	background-color:$lightgreen;
+	@include flex;
+}
+.nav{
+	@include flex;
+	font-size:2rem;
+}
+.nav-left{
+	flex:1;
+	@include flex;
+	justify-content:flex-start;
+}
+.nav-right{
+	color:white;
+	flex:1;
+	@include flex;
+	justify-content:flex-end;
+	
+	div{
+		padding:1.5rem 1.5rem 1.5rem 1rem;
+		border-bottom:.5rem solid transparent;
+		&:hover{
+			border-bottom-color:white;
+		}
+	}
+}
+@media screen and(max-width:600px) {
+	.nav-left{
+		display: none;
+	}
+}
+//banner
+.banner{
+	width:100%;
+	height:40vw;
+	max-height:300px;
+	min-height:120px;
+	background-color:lightgreen;
+}
+//content-adavantage
+.content-advantage{
+	@include flex;
+	align-items:flex-start;
+	justify-content:space-between;
+	margin: 3% 0;
+	>div{
+		@include flex;
+		flex-direction: column;
+		width: 22%;
+		font-size: 1.5rem;
+		>div{
+			padding:1rem 0;
+		}
+		.top{
+			width: 65px;
+			height: 65px;
+			@include flex;
+		}
+		.center{
+			font-size: 2rem;
+		}
+	}
+	.advantage-relationship{
+		border-right: 2px dashed lightgrey;
+		padding-bottom:57px;
+		padding-right:1rem;
+	}
+	.advantage-number{
+		align-items:flex-start;
+		padding-top:86px;
+		img{
+			display: inline-flex;
+		}
+	}
+}
+
+@media screen and (max-width:768px){
+	.content-advantage{
+		@include xs;
+		.advantage-relationship{
+			padding-bottom:1rem;
+			border-right:transparent;
+		}
+		.advantage-number{
+			align-items: center;
+		}
+	}
+}
+//how to learn
+.content-ways{
+	@include flex;
+	font-size:2rem;
+	margin: 1rem 0;
+}
+.ways-line-1,.ways-line-2{
+	@include flex;
+	font-size:1.5rem;
+	justify-content:space-between;
+	margin:1rem 0;
+}
+.ways1{
+	@include flex;
+	width:23%;
+	padding:1rem 0;
+}
+.ways1-left{
+	width:5rem;
+	height:5rem;
+	border-radius:50%;
+	background-color:#fff;
+	@include flex;
+	box-shadow: 1px 1px 1px grey;
+
+}
+.ways1-center{
+	padding-left:2rem;
+	flex:1;
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1200px){
+	.ways-line-1,.ways-line-2{
+		@include sm;
+		margin: 0;
+		.ways1-right-2,.ways1-right-6{
+			opacity: 0;
+		}
+	}
+}
+@media screen and (max-width:768px){
+	.ways-line-1,.ways-line-2{
+		@include xs;
+		margin: 0;
+		.ways1-right{
+			display: none;
+		}
+		.ways1-center{
+			padding-left:0.5rem;
+		}
+	}
+}
+//The show of good learner
+.show-title{
+	font-size:2rem;
+	@include flex;
+	margin:4rem 0;
+}
+.show-container{
+	@include flex;
+	justify-content:space-between;
+}
+.show-content{
+	background-color:white;
+	box-shadow:1px 1px 1px 1px grey;
+	@include flex;
+	flex-direction:column;
+	width:20%;
+	font-size:1.5rem;
+	margin-top:2rem;
+	>div{
+		padding:1rem 2rem;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+	.show-container{
+		@include sm;
+	}
+
+}
+@media screen and (max-width:768px){
+	.show-container{
+		@include xs;
+	}
+	
+}
+//cooperation company
+.content-cooperation-title{
+	font-size:2rem;
+	margin:5rem 0;
+	@include flex;
+}
+.cooperation-container{
+	@include flex;
+	box-shadow:1px 1px 1px 1px grey;
+}
+.company-logo{
+	width:20%;
+	@include flex;
+	padding: 3rem 0;
+	&:hover{
+		box-shadow:1px 1px 1px 1px grey;
+	}
+	img{
+		max-width: 90%;
+	}
+}
+@media screen and (max-width:768px){
+	.cooperation-container{
+		@include xs;
+		width: 100%;
+		>.company-logo{
+			width: 100%;
+		}
+	}
+
+}
+//friendship-link
+.friendship-link-title{
+	font-size:2rem;
+	@include flex;
+	margin:3rem 0;
+}
+.friendship-link-content{
+	margin: 5rem 0;
+}
+.friendship-link-content ul{
+	@include flex;
+	flex-wrap:wrap;
+	width:100%;
+	justify-content:space-between;
+	div{
+		@include flex;
+		width: 10%;
+	}
+}
+li{
+	width:100%;
+	font-size:1.5rem;
+	list-style-type:disc;
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+	.friendship-link-content ul div{
+		width: 25%;
+	}
+}
+@media screen and (max-width:768px){
+	.friendship-link-content ul{
+		flex-direction: column;
+		div{
+			width: 6rem;
+		}
+	}
+}
+//footer
+.footer-wrapper{
+	background-color:$darkgreen;
+	font-size:1.5rem;
+}
+.footer{
+	@include flex;
+	justify-content:space-between;
+}

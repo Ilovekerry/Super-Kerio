@@ -1,4 +1,4 @@
-body{margin: 0;font-size: 62.5%;width: 100%;min-width: 300px;background-color: #fafafa;}
+body,html{margin: 0;font-size: 62.5%;width: 100%;min-width: 300px;background-color: #fafafa;}
 p{margin: 0;}
 
 .header{display: flex;}
