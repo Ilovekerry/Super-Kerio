@@ -1,0 +1,148 @@
+$lightgreen:#29b078;
+$darkgreen:#26a26f;
+@mixin flex {
+	display:flex;
+	justify-content:center;
+	align-items:center;	
+}
+@mixin xs {
+	flex-direction: column;
+		align-items:center;
+		>div{
+			width:70%;
+		}
+	}
+@mixin sm {
+	flex-wrap:wrap;
+	>div{
+		width: 45%;
+	}
+}
+@mixin md{
+	flex-wrap:wrap;
+	>div{
+		width: 45%;
+	}
+}
+//subnav
+.subnav{
+	font-size:1.5rem;
+}
+.subnav-top span{
+	color:$lightgreen;
+}
+.subnav-top{
+	padding:1.5rem 0;
+	border-bottom:1px solid lightgrey;
+	text-align:left;
+}
+.subnav-bottom{
+	padding:1.5rem 0;
+	border-bottom:1px solid #edf1f2;
+	span:first-child{
+		font-size: 1rem;
+		color: grey;
+	}
+	span:nth-child(n+2){
+		&:hover{
+			color: white;
+			background-color: $lightgreen;
+		}
+	}
+
+}
+//banner
+.banner{
+	img{
+		max-width: 100%;
+
+	}
+}
+.content-title{
+	font-size:1.5rem;
+	padding:3rem 0;
+}
+.content-title-lightgreen{
+	color:$lightgreen;
+}
+//content
+.content{
+	@include flex;
+	font-size:1.5rem;
+	justify-content:space-between;
+	align-items:flex-start;
+}
+.content-left{
+	width:24%;
+	@include flex;
+	flex-direction:column;
+	box-shadow:1px 1px 1px 1px lightgrey;
+}
+.content-left-top{
+	border-bottom:1px solid lightgrey;
+	width:100%;
+	@include flex;
+	padding:1.5rem 0;
+}
+.content-left-bottom{
+	padding-bottom:5rem;
+	margin-bottom:2%;
+	>div{
+		background:url(../images/sidebarbtn2.png) no-repeat;
+		background-position:0 50%;
+		margin-top:4rem;
+		padding-left:1rem;
+		color:$lightgreen;
+		&:hover{
+			background:url(../images/sidebarbtn.png) no-repeat;
+			background-position:0 50%;
+			color:orange;
+		}
+	
+	}
+
+	img{
+		display: inline-flex;
+	}
+}
+.content-right{
+	width:74%;
+	@include flex;
+	flex-direction:column;
+	box-shadow:1px 1px 1px 1px lightgrey;
+}
+.content-right-top{
+	@include flex;
+	border-bottom:1px solid lightgrey;
+	img{
+		padding:1rem;
+	}
+	div{
+		@include flex;
+	}
+}
+.content-right-bottom{
+	p{
+		padding:3rem;
+		text-indent: 2rem;
+	}
+}
+@media screen and (max-width:1200px){
+	.content{
+		flex-direction: column;
+		align-items:center;
+	}
+	.content-left,.content-right{
+		width: 100%;
+	}
+	.content-right-top{
+		flex-direction: column;
+		>div{
+			width: 100%;
+		}
+	}
+	.content-right-top-right p{
+		padding:3rem;
+		text-indent: 2rem;
+	}
+}

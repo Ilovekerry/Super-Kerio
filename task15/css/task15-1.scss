@@ -19,65 +19,6 @@ $darkgreen:#26a26f;
 		width: 45%;
 	}
 }
-//header
-.header{
-	width:100%;
-	@include flex;
-	font-size:1.5rem;
-	padding: 0.3rem 0;
-}
-.header-left{
-	flex:1;
-	text-align:left;
-	color:$lightgreen;
-}
-.header-right{
-	flex:1;
-	@include flex;
-	justify-content:flex-end;
-	img{
-		padding: 0 1rem;
-	}
-}
-@media screen and(max-width:500px) {
-	.header-left{
-		display: none;
-	}
-}
-//nav
-.nav-wrapper{
-	width:100%;
-	background-color:$lightgreen;
-	@include flex;
-}
-.nav{
-	@include flex;
-	font-size:2rem;
-}
-.nav-left{
-	flex:1;
-	@include flex;
-	justify-content:flex-start;
-}
-.nav-right{
-	color:white;
-	flex:1;
-	@include flex;
-	justify-content:flex-end;
-	
-	div{
-		padding:1.5rem 1.5rem 1.5rem 1rem;
-		border-bottom:.5rem solid transparent;
-		&:hover{
-			border-bottom-color:white;
-		}
-	}
-}
-@media screen and(max-width:600px) {
-	.nav-left{
-		display: none;
-	}
-}
 //banner
 .banner{
 	width:100%;
@@ -85,7 +26,40 @@ $darkgreen:#26a26f;
 	max-height:300px;
 	min-height:120px;
 	background-color:lightgreen;
+	position:relative;
+
 }
+  .wrap {
+            width: 400%;
+            height:100%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel {
+        	width: 100%;
+        	height: 100%;
+            position: absolute;
+            animation: ma 30s ease 2s infinite normal;
+            overflow: hidden;
+        }
+        
+ @keyframes ma {
+    0%,25% {left:0;animation-delay:5s;}
+    25%,50% {left:-25%;}
+    50%,75% {left:-50%;}
+    75%,100% {left:-75%;}    
+}
+        .carousel img {
+            width: 100%;
+            height: 100%;
+        }
+        .carousel div {
+            float: left;
+            width: 25%;
+            height: 100%;
+            text-align: center;
+        }
 //content-adavantage
 .content-advantage{
 	@include flex;
@@ -139,7 +113,7 @@ $darkgreen:#26a26f;
 .content-ways{
 	@include flex;
 	font-size:2rem;
-	margin: 1rem 0;
+	margin: 4rem 0;
 }
 .ways-line-1,.ways-line-2{
 	@include flex;
@@ -233,6 +207,7 @@ $darkgreen:#26a26f;
 .cooperation-container{
 	@include flex;
 	box-shadow:1px 1px 1px 1px grey;
+	background-color:white;
 }
 .company-logo{
 	width:20%;
@@ -259,7 +234,7 @@ $darkgreen:#26a26f;
 .friendship-link-title{
 	font-size:2rem;
 	@include flex;
-	margin:3rem 0;
+	margin:5rem 0;
 }
 .friendship-link-content{
 	margin: 5rem 0;
@@ -272,11 +247,21 @@ $darkgreen:#26a26f;
 	div{
 		@include flex;
 		width: 10%;
+		li{
+			width: 8rem;
+			list-style-position: inside;
+			border-bottom:1px solid transparent;
+			&:hover{
+			border-bottom:1px solid $darkgreen;
+		}	
+
+		}
+
 	}
 }
 li{
 	width:100%;
-	font-size:1.5rem;
+	font-size:1.3rem;
 	list-style-type:disc;
 }
 @media screen and (min-width:768px) and (max-width:1200px){
@@ -288,16 +273,71 @@ li{
 	.friendship-link-content ul{
 		flex-direction: column;
 		div{
-			width: 6rem;
+			width: 100%;
 		}
 	}
 }
 //footer
 .footer-wrapper{
 	background-color:$darkgreen;
-	font-size:1.5rem;
+	font-size:1.3rem;
+	color:white;
+	padding: 2% 0;
 }
 .footer{
 	@include flex;
 	justify-content:space-between;
+	align-items:flex-start;
+	a{
+		color: white;
+		&:hover{
+			border-bottom:1px solid white;
+			padding-bottom:2px;
+
+		}
+	}
+
+
+}
+.footer-left{
+	@include flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:flex-start;
+	height:108px;
+	
+
+}
+.footer-middle{
+	@include flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:flex-start;
+	height:108px;
+	span{
+		padding-left: 2rem;
+	}
+	
+}
+@media screen and (max-width:768px){
+	.footer{
+		@include xs;
+		>div{
+			width:100%;
+			height: auto;
+		}
+		.footer-blank{
+			display: none;
+		}
+	}
+}
+//copyright
+.copy-right{
+	width:100%;
+	color:white;
+	background-color:$darkgreen;
+	border-top:2px solid $lightgreen;
+	font-size:1rem;
+	@include flex;
+	padding:4px 0;
 }

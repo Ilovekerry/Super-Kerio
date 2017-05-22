@@ -1,0 +1,113 @@
+.subnav {
+  font-size: 1.5rem; }
+
+.subnav-top span {
+  color: #29b078; }
+
+.subnav-top {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid lightgrey;
+  text-align: left; }
+
+.subnav-bottom {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #edf1f2; }
+  .subnav-bottom span:first-child {
+    font-size: 1rem;
+    color: grey; }
+  .subnav-bottom span:nth-child(n+2):hover {
+    color: white;
+    background-color: #29b078; }
+
+.banner img {
+  max-width: 100%; }
+
+.content-title {
+  font-size: 1.5rem;
+  padding: 3rem 0; }
+
+.content-title-lightgreen {
+  color: #29b078; }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.content-left {
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px 1px lightgrey; }
+
+.content-left-top {
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0; }
+
+.content-left-bottom {
+  padding-bottom: 5rem;
+  margin-bottom: 2%; }
+  .content-left-bottom > div {
+    background: url(../images/sidebarbtn2.png) no-repeat;
+    background-position: 0 50%;
+    margin-top: 4rem;
+    padding-left: 1rem;
+    color: #29b078; }
+    .content-left-bottom > div:hover {
+      background: url(../images/sidebarbtn.png) no-repeat;
+      background-position: 0 50%;
+      color: orange; }
+  .content-left-bottom img {
+    display: inline-flex; }
+
+.content-right {
+  width: 74%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px 1px lightgrey; }
+
+.content-right-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgrey; }
+  .content-right-top img {
+    padding: 1rem; }
+  .content-right-top div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.content-right-bottom p {
+  padding: 3rem;
+  text-indent: 2rem; }
+
+@media screen and (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+    align-items: center; }
+
+  .content-left, .content-right {
+    width: 100%; }
+
+  .content-right-top {
+    flex-direction: column; }
+    .content-right-top > div {
+      width: 100%; }
+
+  .content-right-top-right p {
+    padding: 3rem;
+    text-indent: 2rem; } }
+
+/*# sourceMappingURL=task15-3.css.map */

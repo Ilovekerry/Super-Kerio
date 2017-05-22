@@ -1,0 +1,195 @@
+.subnav {
+  font-size: 1.5rem; }
+
+.subnav-top span {
+  color: #29b078; }
+
+.subnav-top {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid lightgrey;
+  text-align: left; }
+
+.subnav-bottom {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #edf1f2; }
+  .subnav-bottom span:first-child {
+    font-size: 1rem;
+    color: grey; }
+  .subnav-bottom span:nth-child(n+2):hover {
+    color: white;
+    background-color: #29b078; }
+
+.content-title {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  font-weight: bold;
+  border-bottom: 1px solid lightgrey; }
+
+.content-job-wrapper {
+  width: 30%;
+  box-shadow: 1px 1px 1px 1px lightgrey;
+  margin-top: 3rem;
+  position: relative; }
+  .content-job-wrapper:hover .content-hidden-layer {
+    display: block; }
+
+.content-job-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold; }
+  .content-job-top > div {
+    padding: 0.4rem; }
+  .content-job-top p:nth-child(2) {
+    font-size: 1.3rem;
+    word-break: break-all;
+    padding: .5rem 0;
+    font-weight: normal; }
+
+.content-job-table {
+  width: 100%; }
+  .content-job-table img {
+    display: inline;
+    padding-left: 1rem; }
+  .content-job-table table {
+    table-layout: fixed;
+    font-size: 1.1rem;
+    width: 100%;
+    border-top: 1px solid lightgrey; }
+  .content-job-table td {
+    padding: 0.3rem;
+    border-bottom: 1px solid lightgrey; }
+  .content-job-table .table-tips {
+    border-bottom: 1px solid transparent; }
+
+.table-grey {
+  color: grey; }
+
+.table-red {
+  color: red; }
+
+.table-bold {
+  font-weight: bold; }
+
+.table-seperate span:last-child {
+  float: right; }
+
+.table-money {
+  text-align: center;
+  border-right: 1px solid lightgrey; }
+
+.table-border {
+  border-right: 1px solid lightgrey; }
+
+.content-hidden-layer {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white; }
+  .content-hidden-layer div {
+    padding: 2.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .content-hidden-layer div p {
+      text-align: left; }
+    .content-hidden-layer div p:first-child {
+      padding: 2rem 0; }
+    .content-hidden-layer div p:last-child {
+      text-indent: 2rem;
+      word-break: break-all; }
+
+.content-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .content-row > div {
+    margin-right: 3.333333%; }
+
+@media screen and (max-width: 1200px) {
+  .content-row {
+    flex-wrap: wrap; }
+    .content-row > div {
+      width: 45%; } }
+@media screen and (max-width: 768px) {
+  .content-row {
+    flex-direction: column;
+    align-items: center; }
+    .content-row > div {
+      width: 70%; }
+    .content-row div {
+      width: 100%;
+      max-width: 320px; } }
+.content {
+  margin-bottom: 10%; }
+
+.footer-wrapper {
+  background-color: #26a26f;
+  font-size: 1.3rem;
+  color: white;
+  padding: 2% 0; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .footer a {
+    color: white; }
+    .footer a:hover {
+      border-bottom: 1px solid white;
+      padding-bottom: 2px; }
+
+.footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 108px; }
+
+.footer-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 108px; }
+  .footer-middle span {
+    padding-left: 2rem; }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center; }
+    .footer > div {
+      width: 70%; }
+    .footer > div {
+      width: 100%;
+      height: auto; }
+    .footer .footer-blank {
+      display: none; } }
+.copy-right {
+  width: 100%;
+  color: white;
+  background-color: #26a26f;
+  border-top: 2px solid #29b078;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0; }
+
+/*# sourceMappingURL=task15-2.css.map */

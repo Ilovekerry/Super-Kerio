@@ -24,4 +24,9 @@ button {
   margin:0 auto;
   min-width: 300px;
   background-color: #fafafa;
+
  }
+  html{
+    overflow-x: hidden; 
+    overflow-y: auto;
+     }
