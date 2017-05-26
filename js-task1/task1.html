@@ -26,17 +26,20 @@
 		justify-content: space-around;
 		width: 100%;
 	}
-	.btn-wrapper div{
+	.btn-wrapper button{
+		display: inline-flex;
 		width: 45%;
 		border-radius: 5%;
 		border: 2px solid green;
 		font-size: 5rem;
-		text-align: center;
+		justify-content: center;
 		cursor: pointer;
 		color: green;
+		background-color: pink;
+		outline: none;
 	}
 	@media screen and (max-width: 640px){
-		.btn-wrapper div{
+		.btn-wrapper button{
 			font-size: 15vw;
 		}
 	}
@@ -53,31 +56,68 @@
 <div class="box"></div>
 <div class="box"></div>
 <div class="btn-wrapper">
-	<div class="btn-start" onclick="startFunction()">开始</div>
-	<div class="btn-end" onclick="endFunction()">结束</div>
+	<button class="btn-start" onclick="startFunction()">开始</button>
+	<button class="btn-end" onclick="endFunction()">结束</button>
 	<script type="text/javascript">
-		//获得9个div
-		function getBoxFunction(){
-			var x=document.getElementsByClassName("box");
-			var y1=Math.floor(Math.random()*900000+100000);
-			var y2=Math.floor(Math.random()*900000+100000);
-			var y3=Math.floor(Math.random()*900000+100000);
-			z1="#"+y1;
-			z2="#"+y2;
-			z3="#"+y3;
-			x[Math.floor(Math.random()*9)].style.backgroundColor=z1;
-			x[Math.floor(Math.random()*9)].style.backgroundColor=z2;
-			x[Math.floor(Math.random()*9)].style.backgroundColor=z3;
+	//随机颜色函数
+	function getColorFunction(){
+		var colorR=Math.floor(Math.random()*256);
+		var colorG=Math.floor(Math.random()*256);
+		var colorB=Math.floor(Math.random()*256);
+		var z=("rgb("+colorR+","+colorG+","+colorB+")");	
+		return(z);
+	}
+	//取得三个不同盒子并给予颜色
+	function getBoxFunction(){
+		//重置样式
+		var x=document.getElementsByClassName("box");
+		for (var i=0;i<9;i++){
+			x[i].style.backgroundColor="green";
 		}
-		//开始
-		var int;
-		function startFunction(){
-			int=window.setInterval(getBoxFunction,1000);
+	//取得三个不重复的下标	
+		var arr=[0,1,2,3,4,5,6,7,8];
+		var result = [];
+		var ranNum = 3;
+		for (var i = 0; i < ranNum; i++) {
+		var ran = Math.floor(Math.random() * arr.length);
+		result.push(arr.splice(ran, 1)[0]);
+		};
+		//上面这部分还是不太懂
+		var a=result[0];
+		var b=result[1];
+		var c=result[2];
+		//分配颜色
+		
+		x[a].style.backgroundColor=getColorFunction();
+		x[b].style.backgroundColor=getColorFunction();
+		x[c].style.backgroundColor=getColorFunction();
+	}
+	function resetColorFunction(){
+		var x=document.getElementsByClassName("box");
+		for (var i=0;i<9;i++){
+			x[i].style.backgroundColor="green";
 		}
-		//结束
-		function endFunction(){
-			clearInterval(int);
+	}
+
+	//开始
+	var start;
+	var active=1;
+
+
+	function startFunction(){
+		if (active==1){
+			start=window.setInterval(getBoxFunction,1000);
+			return active=2;
 		}
+		
+	}
+	//结束
+	function endFunction(){
+		clearInterval(start);
+		window.setTimeout(resetColorFunction,1);
+		return active=1;
+	}
+
 	</script>
 </div>
 </body>
