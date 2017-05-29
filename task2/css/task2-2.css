@@ -1,0 +1,103 @@
+.container {
+  width: 95%; }
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #fe4365;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  z-index: 2; }
+  .header p {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    transform: scale(1, 2);
+    line-height: 55px; }
+    .header p a {
+      text-decoration: none;
+      color: #fff; }
+
+.body-wrapper {
+  margin-top: 55px;
+  background-color: rgba(198, 113, 125, 0.15);
+  flex-direction: column;
+  min-height: calc(100vh - 55px); }
+
+.content-button, .content-footer {
+  padding-top: 0.5rem; }
+  .content-button div, .content-footer div {
+    padding: 0.5rem 0;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #fe4365;
+    box-shadow: 1px 1px 1px 1px #fe4365; }
+
+.content-main {
+  height: 200px;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(254, 67, 101, 0.2); }
+  .content-main div {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 50%;
+    justify-content: flex-start; }
+  .content-main img {
+    width: 50px;
+    height: 50px;
+    padding: 1rem; }
+  .content-main span {
+    display: inline-flex;
+    width: 1rem;
+    justify-content: center; }
+
+@media (max-width: 375px) {
+  .content-main img {
+    padding: 0.2rem; } }
+.content-number {
+  font-size: 1rem;
+  font-weight: bold; }
+  .content-number div {
+    padding: 5rem 0 3rem;
+    padding-left: 2rem;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-end; }
+  .content-number #number {
+    margin: 0 1rem;
+    color: #fe4365;
+    width: 2rem;
+    border: none;
+    background-color: rgba(198, 113, 125, 0.15);
+    border-radius: 10%;
+    font-size: 1rem;
+    outline: none;
+    text-align: center; }
+  .content-number .content-number-pink {
+    color: #fe4365;
+    font-size: 0.8rem;
+    font-weight: normal; }
+
+@media (max-width: 400px) {
+  .content-number div {
+    padding-left: 0.2rem;
+    font-size: 0.8rem; }
+
+  .content-number #number {
+    margin: 0 0.2rem; } }
+.content-footer {
+  flex: 1;
+  padding: 1rem 0 0 0;
+  cursor: pointer; }
+
+.content-footer .content-footer-button {
+  background-color: #fe4365;
+  color: white;
+  padding-bottom: 0.5rem; }
+
+/*# sourceMappingURL=task2-2.css.map */

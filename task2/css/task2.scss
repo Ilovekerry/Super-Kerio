@@ -1,0 +1,136 @@
+$blue:rgb(254,67,101);
+$darkblue:rgb(254,67,101);
+$grey:rgba(198,113,125,0.15);
+$white:#fff;
+$orange:#fe4365;
+@mixin flex{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+body{
+	font-size:62.5%;
+}
+.header{
+	width:100%;
+	position:fixed;
+	top:0px;
+	background-color:$darkblue;
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+	justify-content:flex-start;
+	z-index: 2;
+	p{
+		color: white;
+		font-size: 3rem;
+		font-weight: bold;
+		padding-left: 1rem;
+
+	}
+}
+.body-wrapper{
+	flex-direction:column;
+	background-color:$grey;
+}
+.nav{
+	background-color:white;
+	vertical-align:center;
+	margin-top:75px;
+	border:1px solid lightgrey;
+	font-size:1.2rem;
+	position:relative;
+	padding:1rem 0;
+	color:$orange;
+	img{
+		float: right;
+		position:absolute;
+		right: 0px;
+		top: 50%;
+		transform: translate(0,-50%);
+		padding-right:1rem;
+	}
+}
+@media (max-width:380px){
+	.nav img{
+		padding-right:0.1rem;
+	}
+	.nav{
+		font-size: 0.8rem;
+	}
+}
+.content-wrapper{
+	background-color:$white;
+	flex-direction:column;
+	margin-top:1rem;
+	border:1px solid lightgrey;
+	>div{
+		width: 100%;
+	}
+}
+.content-title{
+	padding:1rem 0;
+	font-size:1.5rem;
+	color:$orange;
+	border-bottom:1px solid $orange;
+	
+}
+.content-edition{
+	position:relative;
+	.edition-link{
+		width: 80%;
+	}
+	button{
+		width: 100%;
+		font-size: 1.5rem;
+		padding:2rem 0;
+		color: white;
+		background-color:$blue;
+
+	}
+}
+@media (max-width:450px){
+	.content-edition .edition-link{
+		width: 70%;
+	}
+}
+.content-edition-1{
+	margin-top:1rem;
+}
+.content-user{
+	font-size:1rem;
+	padding:1rem 0;
+	color:grey;
+}
+.content-triangle{
+	width:0px;
+	height:0px;
+	border:1.5rem solid transparent;
+	border-left:1.5rem solid $orange;
+	position:absolute;
+	top:50%;
+	right:0;
+	transform:translate(50%,-50%);
+
+}
+.content-triangle-left{
+	width:0px;
+	height:0px;
+	border:1.5rem solid transparent;
+	border-right:1.5rem solid $orange;
+	position:absolute;
+	top:50%;
+	left:0;
+	transform:translate(-50%,-50%);
+}
+
+.content-circle{
+	width:0.8rem;
+	height:0.8rem;
+	margin:0.5rem 1rem;
+	border-radius:50%;
+	background-color:pink;
+	&:first-child {
+		background-color:$blue;
+	}
+}
