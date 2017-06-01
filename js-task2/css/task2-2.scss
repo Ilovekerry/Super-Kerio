@@ -4,6 +4,11 @@ $grey:rgba(198,113,125,0.15);
 $white:#fff;
 $orange:#fe4365;
 $lightpink:rgba(254,67,101,0.2);
+a{
+	text-decoration:none;
+	color:white;
+	display:inline-flex;
+}
 .container{
 	width:95%;
 }
@@ -17,18 +22,10 @@ $lightpink:rgba(254,67,101,0.2);
 	margin:0 auto;
 	justify-content:flex-start;
 	z-index: 2;
-	p{
-		color: white;
-		font-size: 2rem;
-		font-weight: bold;
-		padding-left: 1rem;
-		transform: scale(1,2);
-		line-height: 55px;
-		a{
-			text-decoration: none;
-			color: $white;
-		}
-
+	img{
+		height: 30px;
+		width: auto;
+		padding:12.5px 1rem;
 	}
 }
 .body-wrapper{
@@ -50,7 +47,7 @@ $lightpink:rgba(254,67,101,0.2);
 }
 //
 .content-main{
-	height:200px;
+	height:199px;
 	align-items:flex-start;
 	border-bottom: 1px solid $lightpink;
 	div{
@@ -81,7 +78,7 @@ $lightpink:rgba(254,67,101,0.2);
 	font-weight:bold;
 
 	div{
-		padding:5rem 0 3rem;
+		padding:3rem 0 2rem;
 		padding-left:2rem;
 		width: 100%;
 		justify-content: flex-start;
@@ -116,8 +113,10 @@ $lightpink:rgba(254,67,101,0.2);
 //
 .content-footer{
 	flex:1;
-	padding:1rem 0 0 0;
 	cursor:pointer;
+	a{
+		width: 100%;
+	}
 }
 .content-footer .content-footer-button{
 	background-color:$blue;

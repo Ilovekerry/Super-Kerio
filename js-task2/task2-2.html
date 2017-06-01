@@ -8,9 +8,11 @@
 	<link rel="icon" href="Images/favicon.ico" type="image/x-icon" />  
 	<link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />  
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/task2-2.js"></script>
 </head>
 <body>
-<div class="header"><p><a href="task2-1.html"><</a></p></div>
+<div class="header"><a href="task2-1.html"><img src="images/back.png"></a></div>
 <div class="body-wrapper">
 <!--button-->
 <div class="content-button container">
@@ -27,16 +29,16 @@
 </div>
 <!--输入玩家数量区域-->
 <div class="content-number container">
-	<div>请输入玩家数量<input id="number" onChange="getNumberFunction()" onkeyup="value=value.replace(/[^\d]/g,'')">
+	<div>请输入玩家数量<input id="number" oninput="getNumberFunction()" onkeyup="value=value.replace(/[^\d]/g,'')">
 
 	<span class="content-number-pink">玩家数量为4-18</span></div>
 </div>
 <!--发牌区域-->
 <div class="content-footer container">
-	<div class="content-footer-button">去发牌</div>
+	<a href="#"><div class="content-footer-button" onClick="testNumberFunction()">去发牌</div></a>
 </div>
 
 </div>
-<script type="text/javascript" src="js/task2-2.js"></script>
+
 </body>
 </html>

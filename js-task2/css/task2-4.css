@@ -1,0 +1,86 @@
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-flex; }
+
+.container {
+  width: 95%; }
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #fe4365;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  justify-content: space-between;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: white;
+  border-bottom: 2px solid #f8abab; }
+  .header img {
+    height: 30px;
+    padding: 12.5px 0; }
+  .header div {
+    padding: 0 1rem; }
+
+.body-wrapper {
+  margin-top: 55px;
+  min-height: calc(100vh - 55px);
+  background-color: #fe4365;
+  align-items: flex-start; }
+
+.content {
+  width: 90%;
+  margin-top: 1.5rem;
+  background-color: #fe4365;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap; }
+  .content > div {
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    color: #fe4365;
+    margin: 4% 7%; }
+    .content > div div:first-child {
+      height: 80%;
+      width: 100%;
+      background-color: white;
+      color: #fe4365; }
+    .content > div div:last-child {
+      width: 100%;
+      height: 20%;
+      background-color: #f8abab;
+      color: white; }
+
+.content-footer {
+  position: fixed;
+  bottom: 0;
+  margin: auto;
+  max-width: 640px;
+  min-width: 320px;
+  background-color: #fe4365; }
+  .content-footer div {
+    padding: 0.5rem 0;
+    margin: 0 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #fe4365;
+    box-shadow: 1px 1px 1px 1px #fe4365; }
+
+.content-footer {
+  flex: 1;
+  padding: 1rem 0;
+  cursor: pointer; }
+  .content-footer a {
+    width: 100%; }
+
+.content-footer .content-footer-button {
+  background-color: #f8abab;
+  color: white; }
+
+/*# sourceMappingURL=task2-4.css.map */
