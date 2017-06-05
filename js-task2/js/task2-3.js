@@ -1,6 +1,6 @@
-	var a=localStorage.getItem("number1");//总人数
-	var b=localStorage.getItem("number2");//杀手人数
-	var c=localStorage.getItem("number3");//平民人数
+	var a=sessionStorage.getItem("number1");//总人数
+	var b=sessionStorage.getItem("number2");//杀手人数
+	var c=sessionStorage.getItem("number3");//平民人数
 //总人数数组
 var aArr=[];
 for(var i=1;i<=a;i++){
@@ -76,7 +76,7 @@ $("#next").click(function(){
 	//进入第四个页面
 	if (n>=2*a) {
 		$(".content-footer a").attr("href","task2-4.html");
-		localStorage.setItem("list",JSON.stringify(bArr));
+		sessionStorage.setItem("list",JSON.stringify(bArr));
 	}
 
 

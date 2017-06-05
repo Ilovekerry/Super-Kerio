@@ -1,7 +1,7 @@
-	var a=localStorage.getItem("number1");//总人数
-	var b=localStorage.getItem("number2");//杀手人数
-	var c=localStorage.getItem("number3");//平民人数
-	var bArr=JSON.parse(localStorage.getItem("list"));//顺序
+	var a=sessionStorage.getItem("number1");//总人数
+	var b=sessionStorage.getItem("number2");//杀手人数
+	var c=sessionStorage.getItem("number3");//平民人数
+	var bArr=JSON.parse(sessionStorage.getItem("list"));//顺序
 //总人数数组
 console.log(a,b,c);
 console.log(bArr);

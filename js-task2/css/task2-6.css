@@ -21,6 +21,7 @@ a {
   border-bottom: 2px solid #f8abab; }
   .header a {
     width: 30px;
+    height: 55px;
     display: inline-flex;
     justify-content: center;
     align-items: center; }
@@ -31,14 +32,41 @@ a {
     padding: 0 1rem; }
 
 .body-wrapper {
+  flex-direction: column;
   margin-top: 55px;
   min-height: calc(100vh - 55px);
   background-color: #fe4365;
-  align-items: flex-start; }
+  justify-content: flex-start; }
+  .body-wrapper .nav-top {
+    margin-top: 0.5rem;
+    justify-content: flex-start;
+    width: 95%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.5rem 0 0.5rem 5%;
+    background-color: #f8abab;
+    position: relative; }
+    .body-wrapper .nav-top .nav-triangle {
+      width: 0px;
+      height: 0px;
+      border-top: 10px solid #f8abab;
+      border-bottom: 10px solid transparent;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      transform: translate(0, 100%); }
+  .body-wrapper .nav-bottom {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: white;
+    justify-content: flex-start;
+    padding-left: 5%;
+    width: 95%; }
 
 .content {
   width: 100%;
-  margin-top: 1.5rem;
   background-color: #fe4365;
   justify-content: space-between;
   align-content: flex-start;
@@ -49,7 +77,8 @@ a {
     height: 80px;
     background-color: #fff;
     color: #fe4365;
-    margin: 4% 5%; }
+    margin: 4% 5%;
+    position: relative; }
     .content > div div:first-child {
       height: 80%;
       width: 100%;
@@ -60,6 +89,15 @@ a {
       height: 20%;
       background-color: #f8abab;
       color: white; }
+    .content > div:hover img {
+      display: inline-flex; }
+    .content > div img {
+      display: none;
+      width: 40%;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 130%); }
 
 @media (max-width: 350px) {
   .content > div {
@@ -92,4 +130,4 @@ a {
   background-color: #f8abab;
   color: white; }
 
-/*# sourceMappingURL=task2-4.css.map */
+/*# sourceMappingURL=task2-6.css.map */

@@ -27,6 +27,12 @@ a{
 	font-size:1.5rem;
 	color:white;
 	border-bottom:2px solid $green;
+	a{
+		width: 30px;
+		display: inline-flex;
+		justify-content: center;
+		align-items:center;
+	}
 	img{
 		height: 30px;
 		padding:12.5px 0;

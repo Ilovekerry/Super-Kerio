@@ -1,0 +1,151 @@
+$blue:rgb(254,67,101);
+$darkblue:rgb(254,67,101);
+$grey:rgba(198,113,125,0.15);
+$white:#fff;
+$orange:#fe4365;
+$lightpink:rgba(254,67,101,0.2);
+$green:rgb(248,171,171);
+a{
+	text-decoration:none;
+	color:white;
+	display:inline-flex;
+}
+.container{
+	width:95%;
+}
+//header
+.header{
+	width:100%;
+	position:fixed;
+	top:0px;
+	background-color:$darkblue;
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+	justify-content:space-between;
+	z-index: 2;
+	font-size:1.5rem;
+	color:white;
+	border-bottom:1px solid $green;
+	a{
+		width: 30px;
+		display: inline-flex;
+		justify-content: center;
+		align-items:center;
+	}
+	img{
+		height: 30px;
+		padding:12.5px 0;
+	}
+	div{
+		padding:0 1rem;
+	}
+}
+//content
+.body-wrapper{
+	margin-top:55px;
+	min-height:calc(100vh - 55px);
+	background-color:$blue;
+	align-items:flex-start;
+	padding:0 5px;
+	flex-direction:column;
+	justify-content:flex-start;
+
+}
+.day1{
+	width:100%;
+	font-size:1rem;
+	color:$blue;
+	background-color:white;
+	padding:0.3rem 0;
+	margin-top:0.5rem;
+	border:2px solid $green;
+	font-weight:bold;
+}
+.day1-panel{
+	margin-top:8px;
+	background-color:white;
+	border:2px solid $green;
+	width:100%;
+	position:relative;
+	align-items:flex-start;
+}
+.triangle{
+	width:16px;
+	height:16px;
+	background-color:white;
+	position:absolute;
+	top:0;
+	left:50%;
+	transform:translate(-50%,-50%) rotate(45deg);
+
+}
+.day1-panel-content{
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
+	width:80%;
+	margin:30px 5% 30px 15%;
+	border-left: 2px solid $green;
+	font-size:1rem;
+	>div{
+		width: 100%;
+		position:relative;
+		background-color:$blue;
+		cursor: pointer;
+		margin-bottom:0.5rem;
+		.panel-content-triangle{
+			width: 31px;
+			height: 31px;
+			background-color:white;
+			justify-content: flex-end;
+			div{
+				width: 0;
+				height: 0;
+				border:15px solid transparent;
+				border-top: 8px solid transparent;
+				border-bottom: 8px solid transparent;
+				border-right-color:$blue;
+			}
+		}
+		img{
+			height: 31px;
+			position:absolute;
+			left: 0;
+			top: 0;
+			transform: translate(-50%,0);
+			z-index: 2;
+		}
+		.panel-text{
+			color:white;
+			background-color:$blue;
+			flex:1;
+			padding:0.2rem;
+		}
+	}
+	div:last-child{
+		margin: 0;
+	}
+}
+
+//footer
+.footer{
+	z-index:2;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	max-width:640px;
+	min-width:320px;
+	background-color:$green;
+	justify-content:space-around;
+	div{
+		width:40%;
+		font-size: 1.2rem;
+		color: white;
+		background-color:$blue;
+		border-radius:5px;
+		margin:3% 0;
+		padding:2% 0;
+
+	}
+}

@@ -29,9 +29,9 @@ function testNumberFunction(){
 	var c=x[2];
 	if(x[0]>=4&&x[0]<=18){
 		$(".content-footer a").attr("href","task2-3.html");
-		localStorage.setItem("number1",a);
-		localStorage.setItem("number2",b);
-		localStorage.setItem("number3",c);
+		sessionStorage.setItem("number1",a);
+		sessionStorage.setItem("number2",b);
+		sessionStorage.setItem("number3",c);
 		
 	}
 	else{
