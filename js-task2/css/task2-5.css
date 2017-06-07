@@ -15,7 +15,7 @@ a {
   min-width: 320px;
   margin: 0 auto;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 3;
   font-size: 1.5rem;
   color: white;
   border-bottom: 1px solid #f8abab; }
@@ -32,6 +32,7 @@ a {
 
 .body-wrapper {
   margin-top: 55px;
+  margin-bottom: 60px;
   min-height: calc(100vh - 55px);
   background-color: #fe4365;
   align-items: flex-start;
