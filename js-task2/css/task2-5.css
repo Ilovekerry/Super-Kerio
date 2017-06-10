@@ -48,7 +48,8 @@ a {
   padding: 0.3rem 0;
   margin-top: 0.5rem;
   border: 2px solid #f8abab;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
 
 .day1-panel {
   margin-top: 8px;
@@ -107,6 +108,9 @@ a {
       padding: 0.2rem; }
   .day1-panel-content div:last-child {
     margin: 0; }
+
+.day1-panel-content .panel-text {
+  font-size: 1rem; }
 
 .footer {
   z-index: 2;

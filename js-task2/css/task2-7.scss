@@ -1,0 +1,137 @@
+$blue:rgb(254,67,101);
+$darkblue:rgb(254,67,101);
+$grey:rgba(198,113,125,0.15);
+$white:#fff;
+$orange:#fe4365;
+$lightpink:rgba(254,67,101,0.2);
+$green:rgb(248,171,171);
+$realblue:#019ab5;
+$yellow:#fbb435;
+a{
+	text-decoration:none;
+	color:white;
+	display:inline-flex;
+}
+.container{
+	width:89.5%;
+}
+//header
+.header{
+	width:100%;
+	position:fixed;
+	top:0px;
+	background-color:$darkblue;
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+	justify-content:space-between;
+	z-index: 2;
+	font-size:1.5rem;
+	color:white;
+	border-bottom:2px solid $green;
+	a{
+		width: 30px;
+		height: 55px;
+		display: inline-flex;
+		justify-content: center;
+		align-items:center;
+	}
+	img{
+		height: 30px;
+		padding:12.5px 0;
+	}
+	div{
+		padding:0 1rem;
+	}
+}
+//content
+.body-wrapper{
+	flex-direction:column;
+	margin-top:55px;
+	min-height:calc(100vh - 55px);
+	background-color:$blue;
+	justify-content:flex-start;
+	.victory{
+		padding-top: 1rem;
+		flex-direction: column;
+		position:relative;
+		justify-content: flex-end;
+		.victory-text{
+			position:absolute;
+			left: 50%;
+			bottom:0;
+			transform: translate(-50%,0);
+			color:white;
+			font-size: 1.3rem;
+			padding-bottom:0.5rem;
+		}
+		img{
+			width: 280px;
+			height: 150px;
+		}
+	}
+	.congratulation{
+		justify-content: flex-end;
+		word-break: break-all;
+		color:$yellow;
+		font-size: 1rem;
+		font-weight:bold;
+		text-align:left;
+		padding:0.5rem 0;
+	}
+	.history-wrapper{
+		margin-bottom: 80px;
+		width: 98%;
+		background-color:$white;
+		.history{
+			>div{
+				justify-content: flex-start;
+				border-bottom:2px solid $grey;
+				width: 100%;
+				flex-direction: column;
+				align-items:flex-start;
+				p{
+					text-indent: 2rem;
+					padding:0.2rem 0;
+					font-size: 0.8rem;
+				}
+				p:first-child{
+					font-size: 1rem;
+					font-weight: bold;
+				}
+			}
+
+			width: 100%;
+			flex-direction: column;
+		}
+	}
+}
+
+
+
+
+
+//footer
+.footer{
+	z-index:2;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	max-width:640px;
+	min-width:320px;
+	background-color:$green;
+	justify-content:space-around;
+	div{
+		width:40%;
+		font-size: 1.2rem;
+		color: white;
+		background-color:$realblue;
+		border-radius:5px;
+		margin:3% 0;
+		padding:2% 0;
+
+	}
+	div:last-child{
+		background-color:$yellow;
+	}
+}

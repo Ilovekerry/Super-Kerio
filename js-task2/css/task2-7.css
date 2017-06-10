@@ -1,0 +1,105 @@
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-flex; }
+
+.container {
+  width: 89.5%; }
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #fe4365;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  justify-content: space-between;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: white;
+  border-bottom: 2px solid #f8abab; }
+  .header a {
+    width: 30px;
+    height: 55px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+  .header img {
+    height: 30px;
+    padding: 12.5px 0; }
+  .header div {
+    padding: 0 1rem; }
+
+.body-wrapper {
+  flex-direction: column;
+  margin-top: 55px;
+  min-height: calc(100vh - 55px);
+  background-color: #fe4365;
+  justify-content: flex-start; }
+  .body-wrapper .victory {
+    padding-top: 1rem;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end; }
+    .body-wrapper .victory .victory-text {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 0);
+      color: white;
+      font-size: 1.3rem;
+      padding-bottom: 0.5rem; }
+    .body-wrapper .victory img {
+      width: 280px;
+      height: 150px; }
+  .body-wrapper .congratulation {
+    justify-content: flex-end;
+    word-break: break-all;
+    color: #fbb435;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 0.5rem 0; }
+  .body-wrapper .history-wrapper {
+    margin-bottom: 80px;
+    width: 98%;
+    background-color: #fff; }
+    .body-wrapper .history-wrapper .history {
+      width: 100%;
+      flex-direction: column; }
+      .body-wrapper .history-wrapper .history > div {
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(198, 113, 125, 0.15);
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start; }
+        .body-wrapper .history-wrapper .history > div p {
+          text-indent: 2rem;
+          padding: 0.2rem 0;
+          font-size: 0.8rem; }
+        .body-wrapper .history-wrapper .history > div p:first-child {
+          font-size: 1rem;
+          font-weight: bold; }
+
+.footer {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  max-width: 640px;
+  min-width: 320px;
+  background-color: #f8abab;
+  justify-content: space-around; }
+  .footer div {
+    width: 40%;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #019ab5;
+    border-radius: 5px;
+    margin: 3% 0;
+    padding: 2% 0; }
+  .footer div:last-child {
+    background-color: #fbb435; }
+
+/*# sourceMappingURL=task2-7.css.map */

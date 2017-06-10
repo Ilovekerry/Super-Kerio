@@ -72,6 +72,7 @@ a {
   align-content: flex-start;
   flex-wrap: wrap; }
   .content > div {
+    cursor: pointer;
     flex-direction: column;
     width: 80px;
     height: 80px;
