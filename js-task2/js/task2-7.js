@@ -39,7 +39,9 @@ function day(){
 		var q=i-0+1;
 		$('.history').append("<div><p>第"+q+"天</p></div>")
 		$(".history >div").eq(i).append("<p>黑夜:"+r+"号被杀死了，真实身份是平民</p>")
+		if(!isNaN(s)){
 		$(".history >div").eq(i).append("<p>白天:"+s+"号被投死了，真实身份是"+t+"</p>")
+	}
 	}
 }
 //追加结果函数

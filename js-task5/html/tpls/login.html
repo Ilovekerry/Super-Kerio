@@ -1,0 +1,50 @@
+<div class="login-wrapper"  ng-controller="loginCtrl as ctrl">
+	<div class="wrapper">
+	<h3>青菜多后台管理系统</h3>
+	<form name="signUpForm" ng-submit="ctrl.submitForm()">
+		<div class="form-group form-group1" ng-class="{'success':signUpForm.username.$valid}">
+		<div class="login-image-people"></div>
+			<input type="text"
+			 ng-class="{'error':signUpForm.username.$invalid&&signUpForm.username.$touched}"
+			 name="username"
+			 class="form-control"
+			 ng-model="ctrl.userdata.username"
+			 ng-minlength="4"
+			 required
+			 ng-maxlength="10" 
+			 >
+			 <p class="fa fa-check input_result check-success" ng-if="signUpForm.username.$valid"></p>
+			 <div ng-if="signUpForm.username.$error.required&&signUpForm.username.$touched">
+			 	用户名不能为空
+			 </div>
+			  <div ng-if="signUpForm.username.$error.minlength&&signUpForm.username.$touched">
+			 	用户名最少4位
+			 </div>
+			 <div ng-if="signUpForm.username.$error.maxlength&&signUpForm.username.$touched">
+			 	用户名最多10位
+			 </div>
+
+		</div>
+		<div class="form-group form-group2" ng-class="{'success':signUpForm.password.$valid}">
+		<div class="login-image-password"></div>
+			<input type="password" name="password" class="form-control"
+			required
+			ng-minlength="6"
+			ng-maxlength="16"
+			ng-model="ctrl.userdata.password"
+			ng-class="{'error':signUpForm.password.$invalid&&signUpForm.password.$touched}">
+
+			<p class="fa fa-check input_result check-success" ng-if="signUpForm.password.$valid"></p>
+			<div ng-if="signUpForm.password.$error.minlength&&signUpForm.password.$touched">密码最少需要6位</div>
+			<div ng-if="signUpForm.password.$error.maxlength&&signUpForm.password.$touched">密码最多16位</div>
+			<div ng-if="signUpForm.password.$error.required&&signUpForm.password.$touched">密码不能为空</div>
+		</div>
+		<div class="form-group form-group3">
+			<div class="login-tip" ng-bind="ctrl.tip"></div>
+		</div>
+		<div class="form-group">
+			<button class="btn btn-primary">登录</button>
+		</div>
+	</form>
+	</div>
+</div>

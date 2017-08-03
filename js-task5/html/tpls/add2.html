@@ -1,0 +1,18 @@
+<div>
+	<div>每页显示<input type="text" name="listShowNumer" ng-model="listNumber">条
+	<button class="btn btn-default" ng-click=listSearch(1)>首页</button>
+	<button class="btn btn-default " ng-hide="pageNumber2-1==0" ng-click=listSearch(pageNumber2-1)><</button>
+<button class="btn btn-default disabled" ng-hide="pageNumber2-5<=0">...</button>
+
+	<button ng-click="listSearch(pa)" ng-class="{'btn-primary':pa==pageNumber2}" class="btn btn-default" ng-repeat="pa in listPages">{{pa}}</button>
+
+<button class="btn btn-default disabled" ng-hide="pageNumber2-totalPage>-5">...</button>
+	<button class="btn btn-default" ng-click="listSearch(pageNumber2+1)" ng-hide="pageNumber2-totalPage==0">></button>
+
+	<button class="btn btn-default" ng-click=listSearch(totalPage)>末页</button>
+	去第<input type="text" name="listGoNumber" ng-model="pageNumber" ng-init="">页
+
+
+	<button class="btn btn-primary" ng-click="listSearch()">确定</button>
+	</div>
+</div>

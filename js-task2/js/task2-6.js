@@ -67,9 +67,11 @@ $(document).ready(function(){
 		var j=$.inArray(h,deadArr);//判断索引是否属于死亡的数组
 		console.log(h,deadArr,j);
         if(j!==(-1)){
+        	sessionStorage.removeItem("deadPerson");
 			alert("请选择活着的玩家")  
 		}
 		else if (bArr[h]=="杀手") {
+			sessionStorage.removeItem("deadPerson");
 			alert("请选择平民玩家")
 		}
 		else{
@@ -92,6 +94,7 @@ $(document).ready(function(){
 			console.log(j);
 			console.log("vote模式")
 	        if(j!==(-1)){
+	        	sessionStorage.removeItem("deadPerson");
 				alert("请选择活着的玩家")
 			}
 			else{
@@ -130,6 +133,7 @@ function nextKill(){
 		var k=sessionStorage.getItem("deadPerson");
 		console.log(k);
 		if(k==null){
+			sessionStorage.removeItem("deadPerson");
 			alert("请选择一位玩家");
 			return;
 		}
@@ -149,6 +153,7 @@ function nextKill(){
 			sessionStorage.setItem("deadlist",JSON.stringify(deadArr));
 			sessionStorage.setItem("number3",c);
 			console.log(deadArr);
+			sessionStorage.removeItem("deadPerson");
 			location.href="task2-5.html";
 			}
 
@@ -161,6 +166,7 @@ function nextVote(){
 	var k=sessionStorage.getItem("deadPerson");
 		console.log(k);
 		if(k==null){
+			sessionStorage.removeItem("deadPerson");
 			alert("请选择一位玩家");
 			return;
 		}
@@ -187,6 +193,7 @@ function nextVote(){
 			sessionStorage.setItem("deadlist",JSON.stringify(deadArr));
 			sessionStorage.setItem("number2",b);
 			sessionStorage.setItem("number3",c);
+			sessionStorage.removeItem("deadPerson");
 			location.href="task2-5.html";
 			}
 

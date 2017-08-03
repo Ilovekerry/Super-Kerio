@@ -1,0 +1,95 @@
+<div class="add-wrapper" ng-controller="addCtrl">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<strong ng-bind="editTitle">新增Article</strong>
+		</div>
+		<div class="panel-body">
+		<form class="form-horizontal" id="form1" name="myForm">
+			<div class="form-group">
+				<label class="col-md-2 col-sm-2">标题名称</label>
+				<div class="col-md-8 col-sm-8"><input type="text" class="form-control" ng-model="title" required></div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-2 col-sm-2" style="word-spacing: 2.7rem;">类 型</label>
+				<div class="col-md-4 col-sm-4">
+				<select class="form-control" name="red" ng-model="type" required>
+						<option value="">请选择</option>		
+						<option value="0">首页Banner</option>
+						<option value="1">找职位Banner</option>
+						<option value="2">找精英Banner</option>
+						<option value="3">行业大图</option>
+				</select>
+				</div>
+				<div class="col-md-4 col-sm-4">
+				<select class="form-control" ng-show="type==3" ng-model="industry" ng-required="type==3">
+						<option value="">请选择</option>
+						<option value="0">移动互联网</option>
+						<option value="1">电子商务</option>
+						<option value="2">企业服务</option>
+						<option value="3">O2O</option>
+						<option value="4">教育</option>
+						<option value="5">金融</option>
+						<option value="6">游戏</option>
+						</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-2 col-sm-2" style="word-spacing: 2.7rem;">说 明</label>
+				<div id="editor" class="col-md-8 col-sm-8"></div>
+				<script type="text/javascript">
+				    var E = window.wangEditor
+				    var editor = new E('#editor')
+				    // 或者 var editor = new E( document.getElementById('#editor') )
+				    editor.create()
+				</script>
+			</div>
+			<div class="form-group">
+				<label class="col-md-2 col-sm-2">跳转链接</label>
+				<div class="col-md-8 col-sm-8"><input type="text" name="green" class="form-control" ng-model="url" required ></div>
+			</div>
+			<div class="form-group upload-box">
+				<label class="col-md-2 col-sm-2" style="word-spacing: 2.7rem;">配 图</label>
+				<div class="col-md-8 col-sm-8 choose-file-parent">
+				<div class="col-md-12 choose-file">
+					<label class="btn btn-primary" for="uploadPicture">选择文件</label>
+					<input type="file" id="uploadPicture"  accept=accept="image/png, image/jpeg, image/gif, image/jpg" style="display:none" ng-model="readImage">
+					<div><img ng-src="{{imageSrc}}" alt="配图预览"></div>
+					<div>
+						<table>
+							<tr>
+								<th>图片名</th>
+								<th>文件大小</th>
+								<th>进度</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+							<tr ng-if="uploadPicture=='true'">
+								<td><strong ng-bind="imgName"></strong></td>
+								<td ng-bind="imgSize"></td>
+								<td><progress value="{{progressValue}}" max="1"></progress></td>
+								<td><div class="fa fa-check" ng-show="check=='success'"></div></td>
+								<td><button class="btn btn-success btn-xs" ng-click="UploadFile()">提交</button>
+								<button class="btn btn-danger btn-xs" ng-click="DeleteFile()">删除</button></td>
+							</tr>
+						</table>
+					</div>
+
+					
+				</div>
+				
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-2 col-sm-2" style="word-spacing:2.7rem;"></label>
+				<div class="col-md-8 col-sm-8 add-lastLine">
+						<button class="btn btn-success" ng-disabled="!myForm.$valid||imageSrc==undefined" ng-model="status1" ng-click="online(2)" data-toggle="modal" data-target="#myModal3">立即上线</button>
+						<button class="btn btn-success" ng-disabled="!myForm.$valid||imageSrc==undefined" ng-model="status2" ng-click="online(1)" data-toggle="modal" data-target="#myModal3">存为草稿</button>
+						<button class="btn btn-default add-cancel" ui-sref='home.articleList'>取消</button>
+					</div>
+			</div>
+		
+		</form>
+		
+		</div>
+	</div>
+</div>

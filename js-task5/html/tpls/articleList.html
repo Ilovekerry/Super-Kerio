@@ -1,0 +1,161 @@
+<div class="list-wrapper2" ng-controller="listCtrl">
+<script>//日历函数
+	$(document).ready(function() {
+		$("#calendar").bootstrapDatepickr();
+		$("#calendar1").bootstrapDatepickr({date_format: "Y-m-d"});
+		$("#calendar2").bootstrapDatepickr({date_format: "Y-m-d"});
+	});
+</script>
+<!--上面一列-->
+<div class="panel panel-default panel1">
+	<form class="form-horizontal">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-4">
+				<div class="form-group">
+					<label for="" class="control-label col-md-4">发布时间</label>
+					<div class="col-md-8"><input id="calendar1" type="text" class="form-control"  ng-model="startAt""></div>
+					</div>
+				</div>
+				<div class="col-md-4">
+				<div class="form-group">
+					<label for="" class="control-label col-md-4 text-center">—</label>
+					<div class="col-md-8"><input id="calendar2" type="text" class="form-control" ng-model="endAt""></div>
+					</div>
+				</div>
+				<div class="col-md-4">
+				<div class="form-group">
+					<label for="" class="control-label col-md-4" style="word-spacing:30px;">类 型</label>
+					<div class="col-md-8">
+						<select class="form-control" ng-model="type">
+							<option value="">全部</option>
+							<option value="0">首页banner</option>
+							<option value="1">找职位banner</option>
+							<option value="2">找精英banner</option>
+							<option value="3">行业大图</option>
+
+						</select>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="col-md-4 control-label" style="word-spacing:30px;">状 态</label>
+						<div class="col-md-8">
+							<select class="form-control" ng-model="status">
+								<option value="">全部</option>
+								<option value="1">草稿</option>
+								<option value="2">上线</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row button-row">
+				<button class="button-clear btn btn-danger" ng-click="clearSearch()">清空</button>
+				<button class="button-search btn btn-success" ng-click="listSearch(1)">搜索</button>
+			</div>
+		</div>
+	</form>
+</div>
+<!--下面一列-->
+<div class="panel panel-default panel2">
+	<div class="panel-heading">
+	<strong>Article列表</strong>
+	<button class="btn btn-xs btn-success" ui-sref='home.add'>+新增</button>
+	</div>
+	<div class="panel-body table-responsive">
+	<table class="table table-striped add-table-border">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>名称</th>
+				<th>类型</th>
+				<th>发布时间</th>
+				<th>修改时间</th>
+				<th>发布者</th>
+				<th>状态</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr ng-repeat="x in items | orderBy:'updateAt'">
+				<td ng-bind="$index+1"></td>
+				<td ng-bind="x.title"></td>
+				<td ng-bind="x.type | typeChange "></td>
+				<td ng-bind="x.createAt | date:'yyyy-MM-dd HH:mm:ss'"></td>
+				<td ng-bind="x.updateAt | date:'yyyy-MM-dd HH:mm:ss'"></td>
+				<td ng-bind="x.author"></td>
+				<td ng-bind="x.status | statusChange"></td>
+				<td>
+				<span class="text-primary" ng-bind="x.status | statusChange2" ng-click="offline(x.status,x.id)"  data-toggle="modal" data-target="#myModal2"></span>
+				<span class="text-primary" ui-sref="home.add({id:x.id})">编辑</span>
+				<span class="text-primary" ng-click="delete(x.id)" data-toggle="modal" data-target="#myModal">删除</span>
+				</td>
+			</tr>
+			<tr ng-show="total==0"><td>没有找到数据</td></tr>
+		</tbody>
+		</table>
+	</div>
+	<!-- 模态框（Modal） -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="display: none;">&times;</button>
+	<h4 class="modal-title text-primary" id="myModalLabel">提示</h4>
+	</div>
+	<div class="modal-body">是否确认删除</div>
+	<div class="modal-footer">
+	<button type="button" class="btn btn-primary" ng-click="deleteSure(1)" data-dismiss="modal" >确定</button>
+	<button type="button" class="btn btn-warning" data-dismiss="modal" ng-click="deleteSure(2)">取消</button>
+	</div>
+	</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+	</div>
+	<!-- 模态框（Modal2） -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+	<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header modal-header2">
+	<h4 class="modal-title text-primary text-primary" id="myModalLabel2">操作提示</h4>
+	<button type="button" class="close text-default" style="display: none;" data-dismiss="modal" aria-hidden="true">关闭</button>
+	</div>
+	<div class="modal-body">
+		<p class="p1"><span ng-bind="modalText"></span>后该图片将<span ng-bind="modalText2"></span>展示在轮播banner中。</p>
+		<p class="p2">是否执行<span ng-bind="modalText"></span>操作？</p>
+	</div>
+	<div class="modal-footer">
+	<button type="button" class="btn btn-primary" ng-click="uploadSure(1)" data-dismiss="modal">确定</button>
+	<button type="button" class="btn btn-warning" data-dismiss="modal" ng-click="uploadSure(2)">取消</button>
+	</div>
+	</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+	</div>
+	<!-- 模态框（Modal3） -->
+	<div class="modal fade modal3" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header modal-header3">
+	<h4 class="modal-title text-primary text-primary" id="myModalLabel3">提示</h4>
+	</div>
+	<div class="modal-body">
+		<p class="p2"><span ng-bind="modalText"></span>成功</p>
+	</div>
+	<div class="modal-footer">
+	<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+	</div>
+	</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+	</div>
+
+</div>
+
+
+<!--最后一列-->
+
+<div last-line class="list-last-line" ng-show="!total==0"></div>
+</div>

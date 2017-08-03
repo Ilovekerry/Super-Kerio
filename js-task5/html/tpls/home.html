@@ -1,0 +1,49 @@
+<div class="home-wrapper" ng-controller="homeCtrl">
+<div class="header">
+<div class="header-left">
+<a ui-sref=".welcome">萝卜多后台管理系统</a>
+<button type="button" class="navbar-toggle header-button">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+ </button>
+</div>
+<div class="header-right">
+	<span ui-sref="home.example2">管理员</span>
+	<span class="verticle"></span>
+	<span ui-sref="home.example">Admin</span>
+	<span class="verticle"></span>
+	<a href="../index.html"><span class="glyphicon glyphicon-off"></span></a>
+</div>
+</div>
+<div class="content">
+	<div class="content-left">
+		<div class="list-wrapper">
+			<div class="list-title list-title1">
+			<span class="glyphicon glyphicon-pencil"></span>
+			<span class="list-text">信息管理</span>
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			</div>
+			<div class="list-content1">公司列表</div>
+			<div class="list-content1">职位列表</div>
+			<div class="list-title list-title2">
+			<span class="glyphicon glyphicon-pencil"></span>
+			<span class="list-text">Article管理</span>
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			</div>
+			<div class="list-content2" ui-sref=".articleList"><a>Article列表</a></div>
+			<div class="list-title list-title3">
+			<span class="glyphicon glyphicon-pencil"></span>
+			<span class="list-text">后台管理</span>
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			</div>
+			<div class="list-content3">模块管理</div>
+			<div class="list-content3">角色管理</div>
+			<div class="list-content3">密码修改</div>
+			<div class="list-content3">账户管理</div>
+		</div>
+	</div>
+	<div class="content-right" ui-view>
+	</div>
+</div>
+</div>
